@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            List group adalah komponen Bootstrap berbentuk list atau daftar yang bisa di-style. Karena iniadalah list, maka biasanya dibuat dari kumpulan tag &lt;li&gt; di dalam tag &lt;ul&gt; atau &lt;ol&gt;.
+        </p>
+        <ul class="list-group">
+            <li class="list-group-item">list-group-item</li>
+            <li class="list-group-item">list-group-item</li>
+            <li class="list-group-item">list-group-item</li>
+            <li class="list-group-item">list-group-item</li>
+            <li class="list-group-item">list-group-item</li>
+        </ul>
+        <hr>
+        <p>
+            Active dan DisabledUntuk membuat efek list yang sedang terpilih, tambahkan class .active ke dalam list. Dan untuk membuat efek list yang tidak bisa dipilih, tambahkan class .disabled
+        </p>
+        <ul class="list-group">
+            <li class="list-group-item active">list-group-item</li>
+            <li class="list-group-item">list-group-item</li>
+            <li class="list-group-item">list-group-item</li>
+            <li class="list-group-item disabled">list-group-item</li>
+        </ul>
+        <hr>
+       <strong> Button dan Link</strong> Meskipun bernama list group, tapi kita juga bisa membuat tampilan list dari tag &lt;button&gt; dan &lt;a&gt;.
+
+       <div class="list-group">
+           <button type="button" class="list-group-item active">list-group-item-active</button>
+           <button type="button" class="list-group-item">list-group-item</button>
+           <button type="button" class="list-group-item disbled">list-group-item-disabled</button>
+       </div>
+
+       <div class="mt-3"></div>
+
+       <div class="list-group">
+           <a href="#" class="list-group-item active">list-item active</a>
+           <a href="#" class="list-group-item">list-item</a>
+           <a href="#" class="list-group-item">list-item</a>
+           <a href="#" class="list-group-item">list-item</a>
+           <a href="#" class="list-group-item disabled">list-item-disabled</a>
+       </div>
+       <hr>
+       <p>
+         <strong>Hover Effect</strong> Terdapat tambahan class .list-group-item-action yang bisa dipakai untuk membuat efek hover ke dalam list group. 
+       </p>
+       <ul class="list-group">
+           <li class="list-group-item list-group-item-action">list-group-item list-group-item-action</li>
+           <li class="list-group-item list-group-item-action">list-group-item list-group-item-action</li>
+           <li class="list-group-item list-group-item-action">list-group-item list-group-item-action</li>
+           <li class="list-group-item list-group-item-action">list-group-item list-group-item-action</li>
+       </ul>
+       <hr>
+       <p>
+         <strong>Flush</strong> Dalam situasi tertentu, kadang kita ingin membuat list group tanpa border. Bootstrap menyediakan class .list-group-flush 
+       </p>
+       <ul class="list-group list-group-flush">
+        <li class="list-group-item">list-group-item</li>
+        <li class="list-group-item">list-group-item</li>
+        <li class="list-group-item">list-group-item</li>
+        <li class="list-group-item">list-group-item</li>
+    </ul>
+    <hr>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">list-group-item <span class="badge badge-primary">10</span></li>
+        <li class="list-group-item">list-group-item <span class="badge badge-warning">7</span></li>
+        <li class="list-group-item">list-group-item <span class="badge badge-secondary">4</span> </li>
+        <li class="list-group-item">list-group-item <span class="badge badge-dark">2</span> </li>
+    </ul>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

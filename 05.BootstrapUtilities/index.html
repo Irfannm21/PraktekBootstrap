@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Utiliest</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+<style>
+    div > div {
+        border: 1px solid black;
+        width: 120px;
+        height: 50px;
+        margin: 0.3em;
+        padding: 10px 0;
+        text-align: center;
+        float: left;
+    }
+
+    #border {
+        height: 100px;
+        width: 100px;
+        float: left;
+        margin: 0.3em;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    #spacing {
+    border: 1pxsolid black;
+    margin: 0.3em;
+    width: 150px;
+    height: 150px;
+    float: left;
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>13 Warna untuk mengubah warna TEXT</h2>
+        <div class="text-primary">text-primary</div>
+        <div class="text-secondary">text-secondary</div>
+        <div class="text-succes">text-success</div>
+        <div class="text-danger">text-danger</div>
+        <div class="text-warning">text-warning</div>
+        <br>
+        <br>
+        <br>
+        <h2>Berlaku juga dengan tag a</h2>
+        <div><a href="" class="text-info">text-info</a></div>
+        <div ><a href="" class="text-light">text-light</a></div>
+        <div><a href="" class="text-dark">text-dark</a></div>
+        <br>
+        <br>
+        <br>
+        <h2>ditambah dengan backround</h2>
+        <div class="bg-dark text-body">text-body</div>
+        <div class="bg-warning text-muted">text-muted</div>
+        <div class="bg-info text-white">text-white</div>
+        <div class="text-black-50">.text-black-50</div>
+        <div class="text-white-50">text-white-50</div>
+    </div>
+<br>
+<br>
+<br>
+    <div class="container">
+        <h2>Borders adalah utility class Bootstrap yang dipakai untuk membuat efek bingkai (border). </h2>
+        <div id="border" class="border-0">.border-0</div>
+        <div id="border" class="border-top-0">border-top-0</div>
+        <div id="border" class="border-right-0">border-right-0</div>
+        <div id="border" class="border border-primary">border-bottom-0</div>
+        <div id="border" class="border border-success">border-left-0</div>
+    </div>
+    <br>
+    <br>
+    <br>
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <h2>Shadows adalah class Bootstrap untuk membuat efek bayangan (shadow) ke dalam element HTML. </h2>
+            <div class="border border-secondary shadow-none">shadow-none</div>
+            <div class="border border-primary shadow-sm">shadow-sm</div>
+            <div class="border border-success shadow">shadow</div>
+            <div class="border border-success shadow-lg">shadow-lg</div>
+        </div>
+        <div class="container-fluid">
+            <br>
+            <br>
+            <br>
+            <h2>Spacing berisi class utility Bootstrap untuk mengatur spasi atau jarak. Di dalam CSS, ini tidak lain berupa padding dan margin</h2>
+          
+            <div class="p-0" id="spacing">p-0  class ini dipakai untuk menghapus efek padding yang ada saat ini (jika ditemukan)</div>
+            <div class="p-1" id="spacing">p-1</div>
+            <div class="p-2" id="spacing">p-2</div>
+            <div class="p-3" id="spacing">p-3</div>
+            <div class="p-4" id="spacing">p-4</div>
+            <div class="p-5" id="spacing">p-5</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>untuk mengubah satu sisi padding saja, apakah sisi top, bottom, left, right, topdanbottom, atau leftdanright. Caranya,tambahkan karakter t, b, l, r, x atau y ke dalam nama class padding.</h3>
+            <div class="pt-5" id="spacing">div dengan class pt-5</div>
+            <div class="pl-5" id="spacing">div dengan class pl-5</div>
+            <div class="pb-5" id="spacing">div dengan class pb-5</div>
+            <div class="pr-5" id="spacing">div dengan class pr-5</div>
+            <div class="px-5" id="spacing">div dengan class px-5</div>
+            <div class="py-5" id="spacing">div dengan class py-5</div>
+            <div class="pt-sm-4 pl-md-5 p-lg-3" id="spacing">padding top level 3 breakpoing small, padding left level 3 breakpoint medium padding level 3 breakpoint large</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+    <br>
+    <br>
+            <h2>Selesai dengan padding, kita masuk ke margin. Margin adalah spasi atau jarak antara satu element dengan element lain di dalam HTML.</h2>
+            <div class="m-0">.m-0</div>
+            <div class="m-1">m-1</div>
+            <div class="m-2">m-2</div>
+            <div class="m-3">m-3</div>
+            <div class="m-4">m-4</div>
+            <div class="m-5">m-5</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+    <br>
+    <br>
+            <h3>untuk mengubah satu sisi margin saja, apakah sisi top, bottom, left, right, topdanbottom, atau leftdanright. Caranya,tambahkan karakter t, b, l, r, x atau y ke dalam nama class margin.</h3>
+            <div class="mt-4">.mt-4</div>
+            <div class="ml-4">ml-4</div>
+            <div class="mb-4">mb-4</div>
+            <div class="mr-4">mr-4</div>
+            <div class="mx-4">mx-4</div>
+            <div class="my-4">my-4</div>
+            <div class="ml-5 ml-sm-4 ml-md-3 ml-lg-2 ml-xl-0">ml-5 ml-sm-4 ml-md-3 ml-lg-2 ml-xl-0</div>
+            <br>            
+        </div>
+        <br>
+            <br>
+            <br>
+            <br>
+            <br>
+    <br>
+    <br>
+
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script> 
+</html>

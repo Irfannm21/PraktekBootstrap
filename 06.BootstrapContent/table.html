@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>class table. Class ini langsung mempercantik tampilan</p>
+        <table class="table">
+            <thead class="thead-light">
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kota</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ikhsan Prayoga</td>
+                    <td>Jakarta</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sari Citra Lestari</td>
+                    <td>Surabaya</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sandri Fatmala</td>
+                    <td>Medan</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <p>
+            striped rows atau baris belang-belang. Untuk membuat efek ini, Bootstrap menyediakan class .table-striped
+        </p>
+        <table class="table table-striped">
+            <thead class="">
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kota</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ikhsan Prayoga</td>
+                    <td>Jakarta</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sari Citra Lestari</td>
+                    <td>Surabaya</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sandri Fatmala</td>
+                    <td>Medan</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <p>
+            ecara default tabel Bootstrap tidak memiliki border, atau hanya ada border pemisah antar baris . Untuk menambahkan efek border di sekeliling tabel, tersedia class .table-bordered.
+        </p>
+        <table class="table table-bordered">
+            <thead class="">
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kota</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ikhsan Prayoga</td>
+                    <td>Jakarta</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sari Citra Lestari</td>
+                    <td>Surabaya</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sandri Fatmala</td>
+                    <td>Medan</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <p>
+            adalah sebutan untuk tabel tanpa border. Untuk mendapatkan efek ini kita bisa gunakan class .table-borderless
+        </p>
+        <table class="table table-borderless">
+            <thead class="">
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kota</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ikhsan Prayoga</td>
+                    <td>Jakarta</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sari Citra Lestari</td>
+                    <td>Surabaya</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sandri Fatmala</td>
+                    <td>Medan</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <p>
+            Hoverable rows adalah istilah untuk menyebut efek tabel yang barisnya berubah warna ketika cursor mouse berada di atas tabel.
+        </p>
+        <table class="table table-hover">
+            <thead class="">
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kota</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ikhsan Prayoga</td>
+                    <td>Jakarta</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sari Citra Lestari</td>
+                    <td>Surabaya</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sandri Fatmala</td>
+                    <td>Medan</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <p>
+            Untuk membuat tabel yang lebih "compact" atau lebih kecil, kita bisa menggunakan class.table-sm
+        </p>
+        <table class="table table-sm">
+            <thead class="">
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kota</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ikhsan Prayoga</td>
+                    <td>Jakarta</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sari Citra Lestari</td>
+                    <td>Surabaya</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sandri Fatmala</td>
+                    <td>Medan</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <p>
+            <strong>Contextual classes</strong> adalah sebutan Bootstrap untuk sistem pewarnaan konten. Jika sudah berkaitan dengan warna
+        </p>
+        <table class="table">
+            <caption>Test caption for table bootstrap</caption>
+            <thead>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kota</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-success">1</td>
+                    <td class="table-warning">Ikhsan Prayoga</td>
+                    <td class="table-info">Jakarta</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sandri Fatmala</td>
+                    <td>Medan</td>
+                </tr>
+                <tr>
+                    <td class="table-primary">2</td>
+                    <td class="table-secondary">Sari Citra Lestari</td>
+                    <td class="table-active">Surabaya</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <p><strong>table-responsive</strong> bila tabel diisi dengan cukup banyak data (banyak kolom), pada titik tertentu tabel tidak lagi menjadi responsive. Tabel akan overflow dan memanjang ke kanan bagai solusi, Bootstrap menyediakan class .table-responsive 
+        </p>
+        <div class="table-responsive">
+            <table class="table">
+                <caption>Test caption for table bootstrap</caption>
+                <thead>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Kota</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-success">1</td>
+                        <td class="table-warning">Ikhsan Prayoga</td>
+                        <td class="table-info">Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sandri Fatmala</td>
+                        <td>Medan</td>
+                    </tr>
+                    <tr>
+                        <td class="table-primary">2</td>
+                        <td class="table-secondary">Sari Citra Lestari</td>
+                        <td class="table-active">Surabaya</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+</html>

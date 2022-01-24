@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        div > div {
+            border: 1px solid black;
+            padding: 0.2em;
+            margin: 0.3em;
+        }
+
+        div > div >span {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            padding: 0.3em;
+            margin: 1em;
+            text-align: center;
+            float: left;
+        }
+
+        .header {
+            background-color: lightpink;
+            
+        }
+
+        .header > div {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: lightgrey;
+        }
+        #float {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h3>display biasa dipakai untuk mengubah bentuk element HTML dari inline menjadi block atau sebaliknya (menggunakan perintah display:inline dan display:block) dari semua class ini, yang akan sering kita pakai adalah .d-none, .d-inline, .d-inline-blockdan .d-block.</h3>
+
+    <div class="container">
+        <div class="d-none">d-none</div>
+        <div class="d-inline">d-inline</div>
+        <div class="d-inline-block">d-inline-block</div>
+        <div class="d-block">d-block</div>
+        <div class="d-table">d-table</div>
+        <div class="d-table-cell">d-table-cell</div>
+        <d class="table-row">d-table-row</d>
+        <div class="d-flex">d-flex</div>
+        <div class="d-inline-flex">d-inline-flex</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Display breakpoint bisa mengatur hilangnya display</h3>
+    <h5>sistem breakpoint Bootstrap adalah mobile-first. Artinya jika sebuah element menggunakan class .d-none-sm, maka element tersebut tidak akan tampil untuk breakpoint di atasnya, yakni md, lg dan xl. Kecuali di set ulang dengan nilai display lain pada breakpoint tersebut.</h5>
+        <div class="d-none">d-none</div>
+        <div class="d-sm-none">d-sm-none</div>
+        <div class="d-md-none">d-md-none</div>
+        <div class="d-lg-none">d-lg-none</div>
+        <div class="d-xl-none">d-xl-none</div>
+        <div class="d-none md-inline d-lg-none d-xl-block">d-none d-md-inline d-lg-none d-xl-block</div>
+    </div>
+    <h3>Property visibility CSS bisa diisi dengan berbagai nilai yang diantaranya adalah visible dan hidden.</h3>
+    <div class="container">
+        <div class="visible">Visible</div>
+        <div class="invisible">invisible</div>
+        <div class="">Div 3: Visible</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="header clearfix">
+        <div class="float-left">float-left</div>
+        <div class="float-right">float-right</div>
+    </div>
+    </div>
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/popper.js"></script>
+</html>

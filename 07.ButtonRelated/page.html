@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <p>
+            <strong>Pagination</strong> adalah komponen Bootstrap berupa kumpulan tombol angka yang saling bersambung
+        </p>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+        <hr>
+        <p>
+            Pagination hadir dengan 3 ukuran, yakni (seperti yang bisa anda tebak): large, regular dan small. Untuk membuat ukuran large, gunakan class pagination-lg, dan untuk ukuran small, gunakan class  pagination-lg.
+        </p>
+        <ul class="pagination pagination-sm">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+        <ul class="pagination pagination-lg">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+        <hr>
+        <p>
+            Efek active dan disabled sangat cocok dipakai ke dalam pagination. Class .activemenandakan bahwa user sedang berada di halaman tersebut. Sedangkan class .disabled bisa dipakai untuk menandakan bahwa user berada di halaman terakhir, dimana tombol "Next" sudah tidak bisa di klik lagi
+        </p>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item active"><a href="#" class="page-link">3</a></li>
+            <li class="page-item disabled"><a href="#" class="page-link">&raquo;</a></li>
+        </ul> 
+        <hr>
+        <p>
+            Secara default, pagination tampil di sisi kiri halaman. Untuk mengubahnya agar tampil di tengah halaman, tambahkan class .justify-content-center. Dan untuk mengaturnya agar tampil di sisi kanan halaman, tambahkan class .justify-content-end.
+        </p>
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+        <ul class="pagination justify-content-end   ">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+        <hr>
+        <p>
+            Badges adalah komponen Bootstrap yang berbentuk label dengan tampilan mirip seperti button. Badges bisa dibuat dari tag &lt;span&gt; maupun tag &lt;a&gt;.
+        </p>
+        <span class="badge badge-primary">primary</span>
+        <span class="badge badge-secondary">secondary</span>
+        <span class="badge badge-success">success</span>
+        <span class="badge badge-danger">danger</span>
+        <span class="badge badge-pill badge-warning">warning</span>
+        <span class="badge badge-pill badge-info">info</span>
+        <span class="badge badge-pill badge-light">light</span>
+        <span class="badge badge-pill badge-dark">dark</span>
+        <hr>
+
+        <button type="button" class="btn btn-primary">
+            Inbox <span class="badge badge-light">4</span>
+        </button>
+
+        <button type="button" class="btn btn-warning btn-lg">
+            Error <span class="badge badge-light">10</span>
+        </button>
+        <h1>Bootstrap Uncover 
+            <span class="badge badge-primary">New</span>
+        </h1>
+        <h4>Duniilkom <span class="badge badge-dark badge-pill">Recomennded</span></h4>
+
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+</head>
+<style>
+    hr {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <div class="container">
+        <p>
+            <strong>Breadcrumb</strong> adalah istilah untuk menyebut teks yang menandakan posisi halaman saat ini darikeseluruhan struktur website.
+        </p>
+        <nav aria-label="breadcumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">breadcrumb-item</a></li>
+                <li class="breadcrumb-item"><a href="#">breadcrumb-item</a></li>
+                <li class="breadcrumb-item active">Data</li>
+            </ol>    
+        </nav>
+        <hr>
+        <p>
+            Nav komponen Bootstrap yang menjadi struktur dasar menu navigasi. Menu navigasi sendiri nantinya dibuat menggunakan komponen Navbar yang akan kita bahas secara terpisah.
+        </p>
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link active">nav-link active</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">nav-link disabled</a></li>
+        </ul>
+        <hr>
+        <p>
+            Bootstrap menyediakan cara penulisan alternatif dari nav, yakni tanpa unordered list (cukup tag <a> saja
+        </p>
+        <div class="nav">
+            <a href="#" class="nav-link active">Active</a>
+            <a href="#" class="nav-link">Link</a>
+            <a href="#" class="nav-link">Link</a>
+            <a href="#" class="nav-link disabled">disabled</a>
+        </div>
+        <hr>
+        <p>
+            erdapat 2 variasi style untuk nav, yakni pills dan tabs. Untuk membuat kedua efek ini, cukup tambahkan class .nav-pills atau .nav-tabs ke dalam tag &lt;ul&gt;
+        </p>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active">nav-link active</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">nav-link disabled</a></li>
+        </ul>
+        <br>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#" class="nav-link active">nav-link active</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">nav-link disabled</a></li>
+        </ul>
+        <hr>
+        <p>
+            <strong>Nav Fill dan Nav Justified</strong> Secara default, menu nav tampil sesuai dengan panjang teks. Selain itu terdapat class .nav-fill dan .nav-justified yang bisa dipakai untuk mengubah lebar menu nav.
+        </p>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item"><a href="#" class="nav-link">nav-item active</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">nav-link-MENU-fill</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">nav-link disabled</a></li>
+        </ul>
+        <br>
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item"><a href="#" class="nav-link">nav-item</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">nav-link-menu-justified</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+        </ul>
+        <hr>
+        <p>
+           <strong>Nav Alignment</strong> Komponen nav dibuat menggunakan struktur flexbox, sehingga kita bisa memaki class flexboxBootstrap untuk mengatur rata teks tampilan nav.Sebagai contoh, agar tampilan menu nav berada di tengah-tengah parent element, tambahkan class .justify-content-center ke dalam tag &lt;ul&gt;
+        </p>
+        <ul class="nav nav-pills justify-content-left">
+            <li class="nav-item"><a href="#" class="nav-link">nav-item</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">nav-link-menu-justified</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+        </ul>
+        <br>
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item"><a href="#" class="nav-link">nav-item</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">nav-link-menu-justified</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+        </ul>
+        <br>
+        <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link">nav-item</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">nav-link-menu-justified</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+        </ul>
+        <br>
+        <p>
+            Alternatif lain, kita juga bisa mengubah tampilan nav dari horizontal menjadi vertikal menggunakan class .flex-column
+        </p>
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item"><a href="#" class="nav-link active">flex-column</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">nav-link</a></li>
+        </ul>
+        <hr>
+        <p>
+            <strong>Nav dropdown </strong> adalah perpaduan dari komponen nav dan dropdown. Dimana link menu nav diganti dengan tombol menu dropdown.
+        </p>
+        <ul class="nav nav-pills">
+            <li class="nav-item mr-1">
+                <a href="#" class="nav-link active">Active</a>
+            </li>
+            <li class="nav-item dropdown">
+                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                     Dropdown Button
+                 </a>
+                 <div class="dropdown-menu">
+                     <a href="#" class="dropdown-item">dropdown-item</a>
+                     <a href="#" class="dropdown-item">dropdown-item</a>
+                     <a href="#" class="dropdown-item">dropdown-item</a>
+                     <a href="#" class="dropdown-item">dropdown-item</a>
+                 </div>
+                </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">link</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+        </ul>
+        <hr>
+        <p>
+            <strong>Dynamic Tabbed Interfaces </strong> Class .nav-pills cocok dipakai untuk membuat menu navigasi karena tampilan menu item yang berbentuk tombol (button). Namun nav dengan class .nav-tabs juga bisa dipakai untuk membuat apa yang disebut Bootstrap sebagai dynamic tabbed interfaces.
+        </p>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#home" class="nav-link active" data-toggle="tab">Home</a></li>
+            <li class="nav-item"><a href="#profile" class="nav-link" data-toggle="tab">Profile</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link" data-toggle="tab">Conatact</a></li>
+        </ul>
+        
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="home">
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias nemo aperiam consectetur vitae, repudiandae exercitationem at possimus distinctio eaque doloribus voluptas. Consequuntur necessitatibus iste labore officiis fugiat magni nesciunt omnis. </p>
+            </div>
+            <div class="tab-pane fade show" id="profile">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nobis quasi aut quibusdam unde deleniti, molestias officia, odio pariatur minus impedit ullam facere architecto, ipsam vitae temporibus sit. Nihil, quasi?</p>
+            </div>
+            <div class="tab-pane fade show" id="contact">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi et quisquam iusto, assumenda similique maxime nostrum nulla repellendus autem in ipsum fuga sint tempore cum voluptate. Obcaecati, a architecto!</p>
+            </div>
+        </div>
+        <br>
+        
+        <div class="row">
+            <div class="col-3">
+                <ul class="nav flex-column nav-pills">
+                    <li class="nav-item"><a href="#home2" data-toggle="pill" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#profile2" data-toggle="pill" class="nav-link">Profile</a></li>
+                    <li class="nav-item"><a href="#contact2" data-toggle="pill" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-9">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="home2">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel illo ipsam quibusdam, ea mollitia quas temporibus reiciendis itaque neque dignissimos perferendis nam nesciunt delectus ex sit consectetur beatae nulla aperiam?Ducimus quis dolores vitae optio esse consequatur voluptatibus corporis debitis rerum soluta eius temporibus tempore nisi ea molestiae veritatis eaque odit, assumenda amet nam sunt dolore! Sint similique quaerat delectus?
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="profile2">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quos magnam laborum omnis quisquam rem dolor velit possimus voluptatibus repellendus cum mollitia ea repudiandae consequatur officiis natus incidunt, eos veniam?
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="contact2">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur reprehenderit exercitationem et, ad commodi accusantium esse debitis eligendi laboriosam adipisci? Eius corrupti, facere fugiat eveniet ipsum eaque ipsa iusto dolores!
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="contact">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque sed cumque harum atque! Illo, beatae amet. Facilis exercitationem minus commodi sapiente? Neque recusandae culpa id quas aperiam ullam blanditiis. Tempora?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>
+            <strong>Navbar</strong> adalah komponen Bootstrap untuk membuat menu navigasi. Boleh dibilang bahwa navbar adalah "versi upgrade" dari komponen nav yang baru saja kita bahas. Navbar memiliki banyak sub-komponen, yakni fitur-fitur yang bisa ditambahkan ke dalam navbar yang akan kita pelajari secara bertahap
+        </p>
+        <nav class="navbar navbar-expand">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a href="#" class="nav-link active">Active</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">nav-link</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled">disabled</a>
+              </li>
+            </ul>
+        </nav>
+        <br>
+        <p>
+            Juga sama seperti nav, Bootstrap membolehkan kita membuat navbar dengan tag &lt;a&gt; saja, yakni tanpa unordered list;
+        </p>
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Active</a>
+                <a href="#" class="nav-item nav-link">Link</a>
+                <a href="#" class="nav-item nav-link">Link</a>
+                <a href="#" class="nav-item nav-link disabled">Disabled</a>
+            </div>
+        </nav>
+        <div class="mt-3"></div>
+            <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Active</a>
+                <a href="#" class="nav-item nav-link">Link</a>
+                <a href="#" class="nav-item nav-link">Link</a>
+                <a href="#" class="nav-item nav-link disabled">Disabled</a>
+            </div>
+        </nav>
+        <div class="mt-3"></div>
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Active</a>
+                <a href="#" class="nav-item nav-link">Link</a>
+                <a href="#" class="nav-item nav-link">Link</a>
+                <a href="#" class="nav-item nav-link disabled">Disabled</a>
+            </div>
+        </nav>
+        <hr>
+        <p>
+            <strong>Navbar</strong> brand adalah tambahan "merk" atau brand ke dalam navbar. Umumnya brand ini berbentuk nama atau logo website 
+        </p>
+        <nav class="navbar navbar-expand navbar-dark bg-info">
+            <a href="#" class="navbar-brand">INM</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mt-3"></div>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <span class="navbar-brand mb-0 h1">
+                INM
+            </span>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mt-3"></div>
+        <mav class="navbar navbar-expand navbar-dark bg-info">
+            <a href="#" class="navbar-brand">
+                <img src="img/bootstrap-logo.svg" width="30" height="30">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+            </ul>
+        </mav>
+        <div class="mt-3"></div>
+        <p>
+           <strong>Navbar text</strong> adalah variasi lain dari navbar brand. Fungsinya sama-sama untuk menampilkan teks ke dalam navbar.
+        </p>
+
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
+            <span class="navbar-text">
+                INM
+            </span>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mt-3"></div>
+        <p>
+           <strong> navbar dropdown </strong> adalah perpaduan navbar dengan tombol dropdown.
+        </p>
+        
+        <nav class="navbar navbar-expand navbar-dark bg-secondary">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        Education
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">SD</a>
+                        <a href="#" class="dropdown-item">SMP</a>
+                        <a href="#" class="dropdown-item">SMK</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="mt-3"></div>
+        
+        <strong>Navbar Search Form</strong> Fitur lain yang sering ditempatkan ke dalam navbar adalah form pencarian
+    <nav class="navbar navbar-expand navbar-dark bg-secondary justify-content-between">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        <form class="form-inline">
+            <input type="search" class="form-control mr-sm-2" placeholder="search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </nav>
+    <div class="mt-3"></div>
+    <p>
+        <strong>Navbar Responsive</strong> Navbar yang sudah kita buat selama ini sebenarnya sudah responsive, dimana lebar navbar akan menyesuaikan diri sesuai lebar web browser / lebar layar.
+    </p>
+    <nav class="navbar navbarr-expand-sm navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mt-3"></div>
+    <nav class="navbar navbarr-expand-sm navbar-light bg-light">
+        <a href="" class="navbar-brand">INM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav2">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mt-3"></div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <a href="" class="navbar-brand">INM</a>
+    
+        <div class="collapse navbar-collapse" id="navbarNav3">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mt-3"></div>
+    <p>
+        <strong>Navbar Placement</strong> Untuk membuat efek yang lebih menarik, kita bisa mengatur penempatan posisi navbar.
+    </p>
+    <div class="container mt-3">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <form class="form-inline">
+                <input type="search" class="form-control mr-sm-2" placeholder="search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+    <p>
+        <strong>Navbar Complete</strong> aya akan tampilkan sebuah menu navbar lengkap,
+        yakni memiliki navbar brand dengan gambar, navbar dropdown, hamburger menu, dan search
+        form. 
+    </p>
+    <div class="mt-3"></div>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
+        <a href="#" class="navbar-brand">
+            <img src="img/bootstrap-logo.svg" width="30" height="30" class="d-inline-block align-top">
+            INM
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav5">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav5">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">nav-link-1</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Menu</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">dropdown-item 1</a>
+                        <a href="" class="dropdown-item">dropdown-item 2</a>
+                        <a href="" class="dropdown-item">dropdown-item 3</a>
+                        <a href="" class="dropdown-item">dropdown-item 4</a></div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">nav-link disabled</a>
+                </li>
+            </ul>
+            <form action="" class="form-inline" placeholder="Search">
+                <input type="search" class="form-control mr-sm-2" placeholder="search">
+                <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</div>
+
+
+
+<div class="mt-3"></div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+    <form class="form-inline">
+        <input type="search" class="form-control mr-sm-2" placeholder="search">
+        <button class="btn btn-success" type="submit">Search</button>
+    </form>
+</nav>
+
+</div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

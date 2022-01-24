@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn">&lt;button&gt; class btn</button>
+        <input type="button" class="btn" value="&lt;input&gt; class btn">
+        <span class="btn">&lt;span&gt; class btn</span>
+        <a href="#" class="btn">&lt;a&gt; class btn</a>
+        <hr>
+        <button class="btn btn-primary">primary</button>
+        <button class="btn btn-secondary">secondary</button>
+        <button class="btn btn-success">success</button>
+        <button class="btn btn-danger">danger</button>
+        <button class="btn btn-warning">warning</button>
+        <button class="btn btn-info">info</button>
+        <button class="btn btn-light">light</button>
+        <button class="btn btn-info">info</button>
+   <hr>
+    <p>
+        Hasilnya, semua element ini berbentuk tombol meskipun itu adalah tag &lt;em&gt;, &lt;strong&gt; atau &lt;small&gt;. Hal ini juga memperlihatkan bagaimana kode CSS bisa mengubah tampilan semua element menjadi bentuk lain. Namun tentu saja untuk membuat tombol lebih baik menggunakan tag yang memang dirancang untuk hal tersebut, yakni tag &lt;button&gt;.
+    </p>
+    <a href="#" class="btn btn-primary">link</a>
+    <span class="btn btn-secondary">Span</span>
+    <input type="button" class="btn btn-success" value="input">
+    <i class="btn btn-danger">i</i>
+    <b class="btn btn-warning">b</b>
+    <em class="btn btn-info">em</em>
+    <strong class="btn btn-light">strong</strong>
+    <small class="btn-btn-dark">small</small>
+    <hr>
+    <p>
+       <strong> Outline </strong> adalah variasi lain dari warna tombol. Jika menggunakan class ini, tombol memiliki warna background putih dan baru berubah warna begitu cursor mouse berada di atasnya. 
+    </p>
+
+        <button type="button" class="btn btn-outline-primary">outline-primary</button>
+        <button type="button" class="btn btn-outline-secondary">outline-secondary</button>
+        <button type="button" class="btn btn-outline-success">outline-success</button>
+        <button type="button" class="btn btn-outline-danger">outline-dange</button>
+        <button type="button" class="btn btn-outline-warning">outline-warning</button>
+        <button type="button" class="btn btn-outline-info">outline-info</button>
+        <button type="button" class="btn btn-outline-warning">outline-warning</button>
+        <button type="button" class="btn btn-outline-dark">outline-dark</button>
+        <hr>
+        <p>
+            <strong>Size</strong> Bootstrap menyediakan 3 ukuran tombol: large, regular dan small. Class .btn-lg dipakai untukmembuat tampilan tombol large (besar)
+        </p>
+        <button class="btn btn-primary btn-sm">primary btn-sm</button>
+        <button class="btn btn-secondary btn-sm">secondary btn-sm</button>
+        <button class="btn btn-success">success</button>
+        <button class="btn btn-danger">danger</button>
+        <button class="btn btn-warning btn-lg">warning btn-lg</button>
+        <button class="btn btn-info btn-lg">info btn-lg</button>
+        <hr>
+        <p>
+            .btn-block untuk mengubah tipe button dari inline level element menjadi block level element:
+        </p>
+        <button class="btn btn-success btn-block">btn-block</button>
+        <button class="btn btn-danger btn-block">btn-block</button>
+        <hr>
+        <p>
+           <strong> Active state s</strong> Secara bawaan, Bootstrap button akan berubah warna menjadi sedikit gelap ketika cursor mouse berada di atasnya (hover state). Efek ini bisa di-permanenkan, yakni jika kita ingin warna tombol selalu gelap seolah-oleh cursor mouse berada di atasnya
+        </p>
+
+        <button class="btn btn-success active">active</button>
+        <button class="btn btn-danger">normal</button>
+        
+        <span class="ml-4"></span>
+
+        <button class="btn btn-info active">active</button>
+        <button class="btn btn-warning">danger</button>
+        
+        <span class="ml-4"></span>
+
+        <button class="btn btn-dark active">active</button>
+        <button class="btn btn-dansger">danger</button>
+        <hr>
+        <p>
+            Button group merupakan fitur lanjutan dari button yang telah kita pelajari sebelumnya. Buttongroup dipakai untuk membuat kumpulan button yang tampil secara berkelompok
+        </p>
+        <div class="btn-toolbar">
+            <div class="btn-group btn-group-sm">
+                <button class="btn btn-secondary">1</button>
+                <button class="btn btn-secondary">2</button>
+                <button class="btn btn-secondary">3</button>
+            </div>
+            <br>
+            <div class="btn-group mt-2">
+                <button class="btn btn-danger"> <i>i</i> </button>
+                <button class="btn btn-danger"> <b>b</b> </button>
+                <button class="btn btn-danger"> <u>u</u> </button>
+            </div>
+            <br>
+            <div class="btn-group btn-group-lg mt-3">
+                <button class="btn btn-warning"><<</button>
+                <button class="btn btn-warning">play</button>
+                <button class="btn btn-warning">>></button>
+            </div>
+        </div>
+
+        <p>
+            ertical button group adalah variasi button group yang memanjang ke bawah (vertikal), bukanke samping (horizontal) sebagaimana biasanya
+        </p>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-warning"><<</button>
+            <button type="button" class="btn btn-warning">play</button>
+            <button type="button" class="btn btn-warning">>></button>
+        </div>
+        
+        <p>
+            Nested button group adalah sebutan untuk button yang "bersarang", yakni tombol di dalam tombol. Untuk membuat tampilan ini, tempatkan class .btn-group ke dalam .btn-group lain.
+        </p>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary dropdown-toggle"
+              data-toggle="dropdown"> Dropdown </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">3</a>
+                <a class="dropdown-item" href="#">4</a>
+              </div>
+              <button class="btn btn-secondary" type="button">5</button>
+            </div>
+          </div>
+          <hr>
+          <p>
+            <strong> Dropdown  </strong> adalah sebutan untuk komponen Bootstrap berbentuk tombol (button) yang ketika di klik akan menampilkan pilihan menu.
+          </p>
+
+          <div class="dropdown">
+              <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+       </div>
+          </div>
+          <hr>
+          <strong>Color</strong> Color Untuk mengubah warna dropdown, tambahkan class warna button seperti .btn-primary,.btn-secondary, atau .btn-warning ke dalam tag &lt;button&gt; 
+
+          <div class="dropwon float-left ml-2">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown-primary</button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                </div>
+          </div>
+
+          <div class="dropwon float-left ml-2">
+            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">Dropdown-primary</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+            </div>
+        </div>
+       
+        <div class="dropwon float-left ml-2">
+            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Dropdown-primary</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <p>
+            <strong> Split </strong> button adalah variasi gabungan button group dengan dropdown. Di sebelah kiri terdapat tombol biasa, sedangkan di sebelah kanan hanya ada tanda segitiga menu (tanda caret).
+        </p>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary drop-down">Dropdown Split</button>
+            <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                <span class="sr-only">Toggle dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+            </div>
+        </div>
+        <hr>
+        <p>
+            Masih sama seperti button dan button group, dropdown juga memiliki 3 ukuran tombol: large, regular, dan small
+        </p>
+        <div class="dropwon float-left ml-2">
+            <button type="button" class="btn btn-warning dropdown-toggle btn-sm" data-toggle="dropdown">Dropdown-primary</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+        </div>
+        
+            <div class="dropwon float-left ml-2">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Dropdown-primary</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+           </div>
+        
+            <div class="dropwon float-left ml-2">
+                <button type="button" class="btn btn-warning dropdown-toggle btn-lg" data-toggle="dropdown">Dropdown-primary</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+        </div>
+            <hr>
+            <p>
+                Bootstrap juga menyediakan class khusus untuk mengubah arah menu dropdown. Secara bawaan, menu dropdown tampil ke arah bawah, tapi kita juga bisa mengubahnya untuk tampil ke atas, kiri atau kanan. 
+            </p>
+            <div class="dropdown mx-3 dropleft float-left ml-2">
+                <button type="button" class="btn btn-warning" data-toggle="dropdown">Dropdown-primary</button>
+                <div class="dropdown-menu"> 
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    </div>
+            </div>
+            <div class="dropdown mx-3 dropup float-left ml-2">
+                <button type="button" class="btn btn-warning" data-toggle="dropdown">Dropdown-primary</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                  </div>
+            </div>
+            <div class="dropdown mx-3 dropright float-left ml-2">
+            <button type="button" class="btn btn-warning" data-toggle="dropdown">Dropdown-primary</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+            </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <p>
+                Menu header dan menu divider adalah tambahan item untuk membuat judul dan pembatas. 
+            </p>
+            <div class="dropdown">
+                <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Button</button>
+                <div class="dropdown-menu">
+                    <div class="dropdown-header">dropdown-header</div>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                <div class="dropdown-divider"></div>
+                <h6 class="dropdown-header">dropdown-header</h6>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                <a href="#" class="dropdown-item">dropdown-item</a>
+                </div>
+            </div>
+            <hr>
+            <p>
+                untuk keperluan khusus, kita bisa memindahkan atau membuat jarak antara tombol dengan item dropdown. Caranya, tambahkan atribut data-offset
+            </p>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-offset="30,30">Offset</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                </div>
+            </div>
+    </div>        
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

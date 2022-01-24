@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<style>
+    div > div {
+        border: 1px solid black;
+        width: 250px;
+        padding: 0.5em;
+        margin: 0.5em;
+        float: left;
+    }
+    
+    #font {
+        border: 1px sloid black;
+        margin: 0.5em;
+        height: 100px;
+    }
+
+   div >  #monospace {
+        border: 1px solid black;
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+
+    table {
+        border: 1px solid black;
+        margin: 0.5em;
+        height: 100px;
+    }
+
+    td {
+        border: 1px dashed black;
+    }
+    
+    article {
+        width: 200px;
+    }
+    .fixed-top,.fixed-bottom,.sticky-top {
+        background-color: lightgray;
+        width: 150px;
+
+    }
+</style>
+<body>
+    <h3>
+        Bootstrap menyediakan class bantu untuk membuat berbagai efek teks, seperti membuat rata teks (tengah / kiri / kanan / justified), mengubah huruf besar / kecil, serta membuat huruf tebal dan miring
+    </h3>
+
+    <div class="container-fluid">
+            <div class="text-justify">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi minus magni optio tenetur veniam corporis soluta eaque. Nostrum placeat facilis iste consequatur voluptatum odit alias. Eius suscipit officia veritatis necessitatibus!  
+            </div>        
+            <div class="text-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequuntur dicta a est ab maiores vel inventore. Voluptatibus labore, dolorum dignissimos ut deleniti consequuntur neque minima autem at repudiandae sapiente.
+            </div>
+            <div class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro modi odit quo maxime? Quia libero sint vitae fugiat placeat tempore explicabo, molestias fugit vero, rem reprehenderit eveniet corporis ab!
+            </div>
+            <div class="text-right text-truncate">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam unde ducimus ea quaerat qui rerum illum blanditiis odit magni totam dignissimos deleniti veniam, magnam doloribus assumenda quo nam repudiandae beatae.
+            </div>
+    </div>
+    <h3>TEXT Breakpoint</h3>
+    <div class="container">
+        <h1 class="text-sm-center text-md-left text-lg-right">Belajar Bootstrap</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Class text transform Bootstrap tidak lain mempermudah penulisan property text-transform CSS</h3>
+    <div class="container">
+        <div class="text-lowercase">text-lowercase</div>
+        <div class="text-uppercase">text uppercase</div>
+        <div class="text-capitalize">text capitalize</div>
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+        <h5>font weight</h5>
+        <div id="font" class="font-weight-bold">font weight bold</div>
+        <div id="font" class="font-weight-normal">font-weight normal</div>
+        <div id="font" class="font-weight-light">font-weight-light</div>
+        <div id="font" class="font-italic">font italic</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="caontiner">
+        <h3>Class monospace dipakai untuk mengkonversi tampilan teks menjadi monospace, yakni jenis font dimana setiap huruf menempati ruang yang sama besar.</h3>
+        <div id="monospace" class="text-monospace">IRFAN NUR MUHAMMAD</div>
+    </div>
+
+<br>
+<br>
+<br>
+<div class="container">
+    <h4>Class vertical alignment tidak lain berisi property vertical-align CSS. Class ini bertujuan untuk mengatur rata teks secara vertikal, namun hanya berlaku untuk kondisi tertentu. Salah satunya jika teks tersebut berada di dalam sel tabel.</h4>
+
+<table>
+    <tr>
+        <td class="align-baseline">Align baseline</td>
+        <td class="align-top">align-top</td>
+        <td class="align-middle">align-middle</td>
+        <td class="align-bottom">align bottom</td>
+        <td class="align-text-top">align-text-top</td>
+        <td class="align-text-bottom">align-text-bottom</td>
+    </tr>
+</table>
+</div>
+
+<div class="container">
+    <h4>Sizing adalah class Bootstrap untuk mengatur lebar dan tinggi sebuah element. Jika menggunakan CSS, ini bisa di set dari property height dan width.</h4>
+    <div class="w-25" id="monospace">w-25</div>
+    <div class="w-50">w-50</div>
+    <div class="w-75">w-75</div>
+    <div class="w-100">w-100</div>
+    <div class="w-auto">w-auto</div>
+    <div class="mw-100">mw-100</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <h5>
+        Position adalah utilities class Bootstrap untuk mengatur penempatan sebuah element serta penulisan singkat dari property position CSS
+    </h5>
+
+    <div class="fixed-top">Fixed Top</div>
+    <div class="fixed-bottom">Fixed Bottom</div>
+    <div class="position-static">position-static</div>
+    <div class="position-absolute">posistion absolute</div>
+    <div class="position-relative">position-relative</div>
+    <div class="position-fixed">position fixed</div>
+    <div class="position-sticky">position-sticky</div>
+    <article>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae eveniet non architecto rem expedita. Vero aspernatur sunt in tenetur reiciendis earum impedit quae qui expedita nobis ducimus natus, harum facere!</p>
+        <div class="sticky-top">Sticky top</div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo doloremque, iure distinctio rem libero perspiciatis porro similique corporis dicta pariatur. Eaque commodi deserunt ad consequatur at modi ut odio inventore!</p>
+
+    </article>
+</div>
+<br>
+<br>
+
+<br>
+
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+</html>
