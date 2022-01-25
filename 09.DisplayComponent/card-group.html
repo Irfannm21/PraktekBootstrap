@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<style>
+    hr{
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <div class="container">
+        <p>
+            <strong>Card Group</strong> adalah container khusus yang dipakai untuk menampung beberapa card yang
+            menjadi satu kesatuan. 
+        </p>
+
+        <div class="card-group">
+            <div class="card">
+                <img src="img/card_img4.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aliquam aliquid provident facilis. Libero cupiditate officiis sed 
+                    </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/card_img5.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Card-title</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto asperiores libero officia expedita veniam aspernatur deleniti minus sit, odit, neque delectus magni saepe provident obcaecati perspiciatis quia? Aliquam, veniam inventore.
+                    </p>
+                </div>
+                    <div class="card-footer">
+                      <small class="text-muted">card-footer>small.text-muted</small>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/card_img6.jpg" alt="" class="img-card-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card-Title</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis esse, debitis natus explicabo ad similique soluta aspernatur! Explicabo velit tempore eaque. Doloribus aliquam voluptates totam enim sequi accusantium earum blanditiis.
+                        </p>
+                    </div>
+                        <div class="card-footer">
+                          <small class="text-muted">card-footer>small.text-muted</small>
+                        </div>
+                    </div>
+        </div>
+        <hr>
+
+        <p>
+            <strong>Card Deck</strong> adalah sedikit variasi dari card group. Perbedaannya hanya di margin antar card.
+            Jika di dalam card group setiap card saling menempel, maka di card deck terdapat sedikit
+            margin atar card
+        </p>
+
+        <div class="card-deck">
+            <div class="card">
+            <img src="img/card_img4.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+            <h5 class="card-title">Card-Title</h5>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore itaque consequatur nobis harum odit ratione ea deserunt facilis maiores corrupti quas nesciunt, sed sapiente! Eos, nihil ad? Esse, aperiam tempora.
+            </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">.card-footer>small.text-muted</small>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/card_img5.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">card-title</h5>
+                <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nulla quis amet nihil in illum mollitia maxime laboriosam esse corrupti dolorum repellat, itaque dicta impedit, suscipit ut quas eos non.
+                </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">.card-footer>small.text-muted</small>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/card_img6.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">card-title</h5>
+                <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum mollitia nobis perspiciatis, quam accusantium labore cupiditate nostrum inventore aliquam cum maiores aut architecto incidunt nemo consectetur quis iure praesentium culpa?
+                </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">.card-footer>small.text-muted</small>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p>
+        <strong>Card Column</strong>  card column juga berfungsi untuk mengelompokkan
+        beberapa card menjadi sebuah tampilan. Lebih khusus lagi, class .card-group dipakai untuk
+        membuat tampilan layout masonry. Istilah masonry berasal dari dunia arsitektur untuk menyebut susunan blok batu bata yang
+        ditata sedemikian rupa.
+  
+        <div class="card-columns">
+            <div class="card">
+              <img class="card-img-top" src="img/card_img1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title that wraps to a new line</h5>
+                <p class="card-text">This is a longer card with supporting text below
+                   as a natural lead-in to additional content. This content is a
+                   little bit longer.</p>
+              </div>
+            </div>
+            <div class="card p-3">
+              <blockquote class="blockquote mb-0 card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                  posuere erat a ante.</p>
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="img/card_img2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural
+                  lead-in to additional content.</p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+            <div class="card bg-primary text-white text-center p-3">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat.</p>
+                <footer class="blockquote-footer text-white">
+                  <small>
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has a regular title and short
+                  paragraphy of text below it.</p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+            <div class="card p-3 text-right">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is another card with title and supporting
+                  text below. This card has some additional content to make it
+                  slightly taller overall.</p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img" src="img/card_img3.jpg" alt="Card image">
+            </div>
+          </div>
+</div>
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</html>

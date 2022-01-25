@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            <strong>Card</strong> adalah komponen Bootstrap untuk membuat berbagai fitur tampilan. Card sendiri
+            merupakan komponen baru di Bootstrap 4 yang berasal dari gabungan komponen panel, well,
+            dan thumbnail dari Bootstrap 3.
+            </p>
+            <div class="card">
+                <div class="card-body">
+                    <strong>.card.Card-body</strong> dolor sit, amet consectetur adipisicing elit. Fugiat eum alias ex corporis laudantium odio. Laborum, reprehenderit! Odit itaque suscipit pariatur laudantium. Fugit reprehenderit cupiditate laudantium culpa, deserunt dolorem quaerat?
+                </div>
+            </div>
+            <div class="mt-3"></div>
+            <div class="card">
+                <div class="card-header">card-header</div>
+                <div class="card-body">
+                    <strong>.card>.card-header>.card-body</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex, qui similique cupiditate rerum, iusto quis reprehenderit quas, consequuntur nobis quia dolore? Ab, numquam. Dolorum, praesentium. Molestiae vitae sint deserunt.
+                 </div>
+            </div>
+            <div class="mt-3"></div>
+            <div class="card text-center">
+                <h2 class="card-header">h2 card-header</h2>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p> <strong>.card>.card-body>blockquote>p</strong>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dignissimos, et assumenda numquam quidem quis vitae reprehenderit perferendis praesentium amet voluptates ipsa dicta velit animi eos recusandae. Sed, ullam commodi.
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+            <hr>
+            <p>
+                <strong>Card Content</strong> Untuk membuat struktur card body agar lebih rapi, tersedia 4 class tambahan: .card-title,
+                .card-subtitle, .card-text dan .card-link.
+            </p>
+            <div class="card">
+                <h2 class="card-header">card-header</h2>
+                <div class="card-body">
+                    <h5 class="card-title">card-title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">card-subtitle mb-2 text-muted</h6>
+                    <p class="card-text">
+                         <strong>p.card-text</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ut harum sint, animi corporis exercitationem ducimus assumenda. Delectus fugit nulla libero sapiente, unde, veritatis, ipsam ipsum minima repellat asperiores harum!
+                    </p>
+                    <a href="#" class="card-link">a.card-link</a><a href="#" class="card-link">a.card-link</a>
+                </div>
+                <div class="card-footer text-muted">card-footer text-muted</div>
+            </div>
+            <div class="mt-3"></div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">card-title</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, deserunt praesentium fuga nam in nobis explicabo, dignissimos sint eligendi exercitationem asperiores minima? Dolor, deleniti eveniet voluptatum recusandae aut error odit.
+                    </p>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">list-group-item</li>
+                    <li class="list-group-item">list-group-item</li>
+                    <li class="list-group-item">list-group-item</li>
+                    <li class="list-group-item">list-group-item</li>
+                </ul>
+                <div class="card-body text-right">
+                    <a href="#" class="btn btn-primary">Learn More!</a>
+                </div>
+            </div>
+            <hr>
+            <p>
+                <strong>Card width</strong> Kita bisa membatasi lebar card menggunakan property width CSS, utility class
+                Bootstrap, atau memasukkannya ke dalam grid
+            </p>
+
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>.card style : 20rem > .card-body>p.card-text</strong> <br> Dalam contoh di atas, saya membuat 2 buah card. Card pertama (atas) di set dengan lebar
+                        20rem menggunakan kode CSS inline style="width:20rem;". Sedangkan untuk card kedua
+                        (bawah) di set menggunakan utility class Bootstrap .w-50, yang artinya lebar card adalah 50%
+                        dari lebar parent element
+                    </p>
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+
+            <div class="mt-3"></div>
+
+            <div class="card w-50">
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>.card.w50>card-body>p.card-text</strong> <br> Dalam contoh di atas, saya membuat 2 buah card. Card pertama (atas) di set dengan lebar
+                        20rem menggunakan kode CSS inline style="width:20rem;". Sedangkan untuk card kedua
+                        (bawah) di set menggunakan utility class Bootstrap .w-50, yang artinya lebar card adalah 50%
+                        dari lebar parent element
+                    </p>
+                </div>
+                <div class="card-text text-center mb-2"><a href="#" class="btn btn-primary">card-text>a.btn.btn-primary</a></div>
+            </div>
+            <div class="mt-3"></div>
+            <p>
+                Alternatif lain untuk mengatur lebar card adalah dengan menempatkannya ke dalam grid
+            </p>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <strong> .row>.col-sm-8>.card>.card-body>p.card-text</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad magnam quasi iure quas dolor debitis. Illum architecto facere minima culpa officia, itaque quaerat quod, sed at repudiandae voluptate excepturi numquam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                             <strong>.col-sm-4>.card>.card-body </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perspiciatis, culpa perferendis amet eligendi suscipit nihil dignissimos commodi libero ut hic odio id minus aspernatur alias accusamus architecto dicta deserunt?
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <strong>Card image</strong> Card mendukung penambahan gambar, dan ini membuat tampilannya menjadi sangat
+            menarik.
+
+            <div class="card" style="width: 20rem;">
+                <img src="img/card_img1.jpg" class="img-card-top">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        card-title
+                    </h5>
+                    <p class="card-text">
+                        .card>.card-body>p.card-text
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last Updated 3 Min ago</small>
+                    </p>
+                </div>
+            </div>
+            <div class="mt-3"></div>
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">
+                        <strong> p.card-text </strong>
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Updated 3 Min ago</small>
+                    </p>
+                </div>
+                <img src="img/card_img2.jpg" class="card-igm-bottom">
+            </div>
+            <div class="mt-3"></div>
+            <div class="card text-light" style="width: 20rem;">
+                <img src="img/card_img4.jpg" class="card-img">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">card-title</h5>
+                    <p class="card-text">
+                        card-text Overlay adalah istilah design untuk menyebut sebuah element yang berada di atas element
+                        lain. Dalam kasus kita, hal ini merujuk ke teks yang berada di atas gambar.
+                    </p>
+                    <small class="">Updated 3 Min ago</small>
+                </div>
+            </div>
+
+            
+            <hr>
+            <p>
+               <strong>Card Color</strong> class
+               yang dipakai tidak secara khusus untuk card, tapi menggunakan berbagai utility class
+               Bootstrap, seperti .bg-primary, .border-primary, .text-white, dst
+            </p>
+
+            <div class="card text-white bg-primary m-3 float-left w-25">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Primary card title</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing               
+                    elit. Facilis, autem.</p>
+                </div>
+              </div>
+              <div class="card text-white bg-secondary m-3 float-left w-25">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Secondary card title</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing               
+                    elit. Facilis, autem.</p>
+                </div>
+              </div>
+              <div class="card text-white bg-success m-3 float-left w-25">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Success card title</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing               
+                    elit. Facilis, autem.</p>
+                </div>
+              </div>
+        
+              <div class="card border-primary m-3 float-left w-25">
+                <div class="card-header">Header</div>
+                <div class="card-body text-primary">
+                  <h5 class="card-title">Primary card title</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing               
+                      elit. Facilis, autem.</p>        
+                  </div>
+              </div>
+              <div class="card border-secondary m-3 float-left w-25">
+                <div class="card-header">Header</div>
+                <div class="card-body text-secondary">
+                  <h5 class="card-title">Secondary card title</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing               
+                      elit. Facilis, autem.</p>        
+                  </div>
+              </div>
+              <div class="card border-success m-3 float-left w-25">
+                <div class="card-header">Header</div>
+                <div class="card-body text-success">
+                  <h5 class="card-title">Success card title</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing               
+                    elit. Facilis, autem.</p>        
+                </div>
+              </div>
+        
+    </div>
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</html>
