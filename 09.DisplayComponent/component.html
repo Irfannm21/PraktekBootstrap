@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            <strong>Alert</strong> Ini biasa dipakai untuk menampilkan pesan kesalahan di sebuah form
+            atau untuk memberitahu user bahwa ada tambahan informasi baru
+        </p>
+
+        <div class="alert alert-primary">alert alert-primary</div>
+        <div class="alert alert-secondary">alert alert-secondary</div>
+        <div class="alert alert-success">alert alert-success</div>
+        <div class="alert alert-danger">alert alert-danger</div>
+        <div class="alert alert-warning">alert alert-warning</div>
+        <div class="alert alert-info">alert alert-info</div>
+        <div class="alert alert-light">alert alert-light</div>
+        <div class="alert alert-dark">alert alert-dark</div>
+
+        <div class="mt-3"></div>
+        <p>
+            <strong>Alert Dismissing</strong> dalah sebutan untuk efek interaktif alert dengan tambahan icon close. Icon
+            ini bisa di klik untuk menutup tampilan alert.
+        </p>
+      
+        <div class="alert alert-info alert-dismissible fade show">
+            <strong>Irfans</strong>  class .alert-dismissible, .fade dan .show (baris 1).
+            Icon close sendiri dibuat dari tag &lt;button&gt; dengan class .close serta atribut data-
+            dismiss="alert" (baris 3) . Isi tag &lt;button&gt; berupa tag &lt;span&gt;&times;&lt;span&gt; (baris 4). Kode
+            &times; adalah kode HTML entities untuk menampilkan tanda silang ( x ). 
+            <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+        </div>
+        <hr>
+        <p>
+            <strong>Modal</strong> odal adalah sebutan untuk jendela
+            atau tampilan yang berada di atas jendela lain  Biasanya jendela modal ini tampil untuk
+            memberikan informasi, peringatan atau untuk meminta inputan dari user.
+        </p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contohModal">
+            tampilkan modal
+        </button>
+
+        <div class="modal fade" id="contohModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>
+                            .modal.fade#contohModal tabindex="-1">.modal-dialog>.modal-content>.modal-body>p ambahan atribut tabindex="-1" berguna untuk mencegah nagivasi dengan tombol tab ketika
+                            modal ditampilkan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3"></div>
+        <p>
+            Agar teks di dalam modal tampil lebih rapi, bisa ditambahkan class .modal-title dan .modal-footer yang mirip seperti di komponen card:
+        </p>
+        
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contohModal2">
+            Tampilkan Modal Rapih
+        </button>
+
+        <div class="modal fade" id="contohModal2" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">.modal-dialog>.modal-content>.modal-header>h5.modal-title</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>.modal-dialog>modal.content>modal-body>p</p>
+                    </div>
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="mt-3"></div>
+        <p>
+            <strong>Modal Centered</strong> Sebagai alternatif terdapat class .modal-dialog-centered yang bisa ditambahkan agar box modal tampil persis di tengah-
+            tengah web browser.
+        </p>
+        
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contohModal3">
+            Tampilkan Centered
+        </button>
+
+        <div class="modal fade" id="contohModal3" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">.modal-dialog>.modal-content>.modal-header>h5.modal-title</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            .modal-dialog>.modal-content>.modal-body>p
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3"></div>
+        <p>
+            <strong>Modal Size</strong> erdapat 3 pilihan ukuran box
+            modal: small, regular dan large. Lebar box yang sudah kita pakai dalam contoh sebelumnya
+            adalah ukuran regular yang merupakan lebar default.
+            Untuk mengecilkan ukuran box modal menjadi small, tambahkan class .modal-sm ke dalam tag
+            &lt;div&gt; yang memiliki class .modal-dialog. Untuk ukuran large, tambahkan class .modal-lg
+        </p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSmall">
+            Tampilkan Modam Small
+        </button>
+
+        <div class="modal fade" id="modalSmall" tabindex="-1">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">.modal.fade>.modal-dialog.modal-sm>.modal-content>.modal-header>h5.modal-title</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            .modal.fade>.modal-dialog.modal-sm>.modal-content>.modal-bodyr>p
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalRegular">
+            Tampilkan modal 
+        </button>
+
+        <div class="modal fade" id="modalRegular" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">.modal.fade>.modal-dialog>.modal-content>.modal-header>h5.modal-title</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            .modal.fade>.modal-dialog.modal-sm>.modal-content>.modal-bodyr>p
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalLarge">
+            Tampilkan Modam Large
+        </button>
+
+        <div class="modal fade" id="modalLarge" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">.modal.fade>.modal-dialog.modal-lg>.modal-content>.modal-header>h5.modal-title</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            .modal.fade>.modal-dialog.modal-sm>.modal-content>.modal-bodyr>p
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="mt-3"></div>
+        <p>
+            <strong>Popovers</strong> Popovers (bentuk jamak dari popover) adalah komponen Bootstrap untuk membuat efek teks
+            yang tampil di samping element saat ini. Popover mirip seperti tooltips namun dengan
+            tampilan yang lebih menarik. Popover sendiri berasal dari library JavaScript Popper.js.
+        </p>
+
+       
+      <button type="button" class="btn btn-lg btn-danger"
+      data-toggle="popover" title="Popover title" data-placement="top"
+      data-content="Sebuah pesan interaktif dari popover Bootstrap">
+      Popover Top</button>
+
+      <button type="button" class="btn btn-lg btn-danger"
+      data-toggle="popover" title="Popover title" data-placement="bottom"
+      data-content="Sebuah pesan interaktif dari popover Bootstrap">
+      Popover Bottom</button>
+
+      <button type="button" class="btn btn-lg btn-danger"
+      data-toggle="popover" title="Popover title" data-placement="left"
+      data-content="Sebuah pesan interaktif dari popover Bootstrap">
+      Popover Left</button>
+      
+      <button type="button" class="btn btn-lg btn-danger"
+      data-toggle="popover" title="Popover title" data-placement="right"
+      data-content="Sebuah pesan interaktif dari popover Bootstrap">
+      Popover Right</button>
+      
+
+      <hr>
+      <div class="mt-3"></div>
+        
+      <p>
+          <strong>POPOVER DISMISS</strong> Alternatif yang lebih baik adalah seperti komponen modal, dimana kita bisa menutup modal
+          cukup dengan men-klik sembarang tempat di luar element modal. Untuk membuat efek yang
+          sama di popover, tambahkan atribut tabindex="0" dan data-trigger="focus"
+        </p>
+
+          <button type="button" class="btn btn-lg btn-danger"
+      data-toggle="popover" title="Popover title" data-placement="top"
+      data-content="Sebuah pesan interaktif dari popover Bootstrap" tabindex="0" data-trigger="focus">
+      Popover Top</button>
+     
+      <div class="mt-3"></div>
+      <p>
+          <strong>Popover Trigger</strong> Pada dasarnya, hampir semua element HTML bisa
+          digunakan untuk menampilkan popover (sebagai trigger), dengan syarat kita menulis semua
+          atribut yang diperlukan.
+      </p>
+
+      <p>
+          silahkan hover text ini 
+          <mark tabindex="0" data-toggle="popover" data-trigger="hover" title="popover title" data-content="sebuah pesaninteraktif dari popover bootstrapss">Texxt Ini</mark> untuk menampilkan text popover
+      </p>
+
+      <hr>
+      <p>
+          <strong>Tooltips</strong> Komponen tooltip Bootstrap men-style tampilan tooltip ini dengan efek yang lebih terlihat.
+          Caranya, tambahkan atribut data-toggle="tooltip"
+      </p>
+      <p>
+        <abbr title="Tooltips Pertama">Tooltips Pertama</abbr> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis sapiente quod esse. Optio corrupti quisquam eveniet. Beatae, repellendus nesciunt dolorem deserunt ad dolores eos dignissimos voluptates deleniti aperiam architecto!
+        <abbr title="Tooltips Kedua" data-placement="bottom">Tooltips Kedua</abbr>
+    </p>
+
+    <hr>
+    <p>
+        <strong>Progress</strong> Komponen progress Bootstrap terdiri dari 2 bagian: sebuah container dengan class .progress
+        serta class .progress-bar yang ada di dalam container tersebut
+    </p>
+
+    <div class="progress mt-3">
+        <div class="progress-bar"></div>
+    </div>    
+
+    <div class="progress mt-3" style="height: 5px">
+        <div class="progress-bar" style="width: 25%">25%</div>
+    </div>
+    <div class="progress mt-3" style="height: 15px">
+        <div class="progress-bar" style="width: 50%">50%</div>
+    </div>
+    <div class="progress mt-3" style="height: 35px">
+        <div class="progress-bar bg-danger" style="width: 75%">75%</div>
+    </div>
+    <div class="progress mt-3">
+        <div class="progress-bar bg-success" style="width: 100%">100%</div>
+    </div>
+    <div class="progress mt-3">
+        <div class="progress-bar bg-primary" style="width: 20%">20%</div>
+        <div class="progress-bar bg-secondary" style="width: 40%">40%</div>
+        <div class="progress-bar bg-success" style="width: 60%">60%</div>
+    </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        // Script popover
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+      // Script Tooltips
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+</body>
+</html>
