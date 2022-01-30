@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            <strong>Form</strong> Forms adalah komponen Bootstrap untuk membuat... form. Atau lebih tepatnya mempercantik
+            tampilan form HTML. <br>
+            <strong>Form Polos</strong>
+        </p>
+        <form action="komentar">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" placeholder="Nama Lengkar">
+
+            <label for="password">Password</label>
+            <input type="password" name="password">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="test@gmail.com">
+
+            <label for="komentar">Komentar</label>
+            <textarea name="komentar" id="komentar" cols="30" rows="10"></textarea>
+
+        </form>
+
+        <hr>
+
+        <p>
+            <strong>Form Control</strong> .form-control. Class ini memberikan style umum kepada inputan form,
+            diantaranya tag input yang berbentuk textbox seperti input type="text", input
+            type="password", input type="email, select> dan textarea
+        </p>
+
+        <form>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" class="form-control" placeholder='type="text" id="nama" class="form-control"'>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder='type="password" name="password" id="password" class="form-control"'>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" placeholder='type="email" name="email" class="form-control"'>
+
+            <label for="tahun">Tahun</label>
+            <select name="tahun" id="tahun" class="form-control">
+                <option value="">2017</option>
+                <option value="">2018</option>
+                <option value="">2019</option>
+                <option value="">2020</option>
+            </select>
+
+            <label for="komentar">Komentar</label>
+            <textarea name="komentar" id="komentar" cols="30" rows="10" class="form-control" placeholder='textarea name="komentar" id="komentar" cols="30" rows="10" class="form-control"'></textarea>
+        </form>
+
+        <hr>
+
+        <p>
+            <strong>Form Group</strong> .form-control memang sudah menarik, tapi masih ada
+            yang terasa kurang pas, yakni jarak antara inputan form dengan teks label di bawahnya terlalu
+            rapat. Ini sudah di antisipasi Bootstrap dengan menyediakan class .form-group. Namun class
+            ini tidak untuk inputan form, tapi sebagai container dari pasangan tag &lt;label&gt; dan tag
+            &lt;input&gt; dengan kata lain di bungkus div.
+        </p>
+
+        <form action="">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" class="form-control" placeholder='type="text" id="nama" class="form-control"'>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder='type="password" name="password" id="password" class="form-control"'>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control" placeholder='type="email" name="email" class="form-control"'>
+            </div>  
+            
+            <div class="form-group">
+                <label for="tahun">Tahun</label>
+                <select name="tahun" id="tahun" class="form-control">
+                    <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+                </select>
+            </div>
+
+            <div class="form-gorup">
+                <label for="komentar">Komentar</label>
+                <textarea name="komentar" id="komentar" cols="30" rows="10" class="form-control" placeholder='textarea name="komentar" id="komentar" cols="30" rows="10" class="form-control"'></textarea>
+            </div>
+        </form>
+
+        <hr>
+
+        <p>
+            <strong>Form Size</strong> Untuk membuat inputan yang lebih kecil atau lebih besar, tersedia class .form-control-sm dan form-control-lg
+        </p>
+
+        <div class="form-group">
+            <input type="text" class="form-control form-control-sm" placeholder='type="text" class="form-control form-control-sm"'>
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form form-control" placeholder='type="text" class="form form-control"'>
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder='type="text" class="form-control form-control-lg"'>
+        </div>
+
+        <hr>
+        <p>
+            <strong>Form Readonly, Disabled dan plaintext</strong> Jika
+            ditambahkan atribut readonly, inputan form menjadi tidak bisa diakses namun tampilannya
+            masih normal. Sedangkan jika menggunakan atribut disabled, selain tidak bisa diakses
+            tampilan form juga menjadi abu-abu yang menandakan tidak aktif.
+        </p>
+
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder='input type="text" class="form-control" placeholder="" readonly>' readonly>
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder='input type="text" class="form-control" placeholder="" disabled' disabled>
+        </div>
+
+        <div class="form-group">
+            <input class="form-control form-control form-control-plaintext" placeholder='class="form-control form-control form-control-plaintext'>
+        </div>
+
+        <hr>
+        <p>
+            <strong>Form File dan Form Range</strong> Untuk men-style inputan form yang berbentuk tag input type="file" dan input
+            type="range", tersedia class khusus .form-control-file dan .form-control-range
+        </p>
+        
+        <form action="">
+            <label for="fileUploadDefault">Upload File</label>
+            <input type="file" id="fileUploadDefault">
+
+            <label for="rangeJarakDefault">Jarak</label>
+            <input type="range" id="rangeJarakDefault">
+           
+            <br><br><br><br>
+
+            <div class="form-group">
+                <label for="fileUploadDefault">Upload File</label>
+                <input type="file" id="fileUploadDefault" class="form-control-file">
+            </div>
+
+            <div class="form-group">
+                <label for="rangeJarakDefault">Jarak</label>
+                <input type="range" id="rangeJarakDefault" class="form-control-range">
+            </div>
+        </form>
+
+        <hr>
+        <p>
+            Form Checkbox dan Radio Penggunaan atribut for di dalam tag &lt;label&gt; yang berpasangan dengan atribut id di tag
+            &lt;label&gt;, menambah fitur user experience ke dalam checkbox (dan juga nantinya radio). Kita
+                bisa men-checklist checkbox hanya dengan men-klik teks saja. 
+        </p>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="inputCheck1">
+            <label for="inputCheck1" class="form-check-label">for="inputCheck1" class="form-check-label"</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="inputCheck2" disabled>
+            <label for="inputCheck2" class="form-check-label">label for="inputCheck2" class="form-check-label"</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" name="contohRadio" class="form-check-input" id="inputRadio1">
+            <label for="inputRadio1" class="form-check-label">label for="inputRadio1" class="form-check-label</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" name="contohRadio" class="form-check-input" id="inputRadio2">
+            <label for="inputRadio2" class="form-check-label">label for="inputRadio1" class="form-check-label</label>
+        </div>
+
+        <div class="form-check">
+            <input type="radio" name="contohRadio" class="form-check-input" id="inputRadio3" disabled>
+            <label for="inputRadio3" class="form-check-label">label for="inputRadio1" class="form-check-label disabled</label>
+        </div>
+
+        <p>
+            jika kita ingin pilihan ini berjejer satu sama lain ke kanan (inline)? Caranya
+                tambahan class .form-check-inline ke dalam container dari setiap checkbox dan radio:
+        </p>
+
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="inputCheck1">
+            <label for="inputCheck1" class="form-check-label">for="inputCheck1" class="form-check-label"</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="inputCheck2" disabled>
+            <label for="inputCheck2" class="form-check-label">label for="inputCheck2" class="form-check-label"</label>
+        </div>
+        <br>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="contohRadio" class="form-check-input" id="inputRadio1">
+            <label for="inputRadio1" class="form-check-label">label for="inputRadio1" class="form-check-label</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="radio" name="contohRadio" class="form-check-input" id="inputRadio2">
+            <label for="inputRadio2" class="form-check-label">label for="inputRadio1" class="form-check-label</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="radio" name="contohRadio" class="form-check-input" id="inputRadio3" disabled>
+            <label for="inputRadio3" class="form-check-label">disabled</label>
+        </div>
+
+        <hr>
+        <p>
+            <Strong>Form Grid</Strong> Dari contoh form Bootstrap yang sudah kita coba, terlihat bahwa tambahan class .form-
+            control membuat tampilan inputan form memanjang memenuhi parent element (width:100%). Namun jika digabung dengan Bootstrap grid system, kita bisa dengan mudah mengatur lebar
+            dan posisi inputan ini.
+        </p>
+
+        <p>
+            col. Apabila anda masih
+                ingat, class .col tanpa jumlah segmen akan membagi .row dengan ukuran yang sama besar.
+        </p>
+
+        <form action="">
+            <div class="form-row">
+                <div class="form-group col-8">
+                    <label for="nama">form-row>.form-group-8>label</label>
+                    <input type="text" class="form-control" placeholder="nama lengkap">
+                </div>
+
+                <div class="form-group col-4">
+                    <label for="password">form-row>.form-group-4>label</label>
+                    <input type="password" class="form-control" placeholder="passowrd">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-4">
+                    <label for="">Pform-row>.form-group-8>label</label>
+                    <select name="provinsi" id="provinsi" class="form-control">
+                        <option value="" active>form-row>.form-group-8>select>option</option>
+                        <option value="" class="form-control">Jawa Barat</option>
+                        <option value="" class="form-control">DKI Jakarta</option>
+                        <option value="" class="form-control">Jawa Timur</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-4">
+                    <label for="">Pilih Kota</label>
+                    <select name="kota" id="kota" class="form-control">
+                        <option value="">form-row>.form-group-8>select>option</option>
+                        <option value="" class="form-control">Bandung</option>
+                        <option value="" class="form-control">Jakarta</option>
+                        <option value="" class="form-control">Surabaya</option>
+                    </select>
+                </div>
+                
+                <div class="form-group col-4">
+                    <label for="">Pilih Kecamatan</label>
+                    <select name="kecamatan" id="kecamatan" class="form-control">
+                        <option value="">form-row>.form-group-8>select>option</option>
+                        <option value="" class="form-control">Rancaekek</option>
+                        <option value="" class="form-control">Jatinangor</option>
+                        <option value="" class="form-control">Bojongloa</option>
+                    </select>
+                </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+                       <input type="checkbox" class="form-check-input" id="snk">
+                       <label for="snk" class="form-check-label">.form-group>.form-check>label</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Daftar</button>
+        </form>
+        <hr>
+        <p>
+            <strong>Horizontal Form</strong> Dalam contoh sebelumnya, posisi tampilan tag &lt;input&gt; berada di bawah tag &lt;input&gt;.
+                Bagaimana jika kita ingin membuat inputan form yang tampil bersebelahan dengan teks label
+                secara horizontal (bukan di bawahnya)
+        </p>
+
+        <div class="form-group row">
+            <label for="nama" class="col-sm-2 col-form-label">.form-group.row>.label</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="nama" placeholder=".form-group.row>.col-sm-10>input">
+            </div>
+        </div>
+  
+    <div class="form-group row">
+        <label for="password" class="col-sm-2 col-form-label">.form-group.row>.label</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="password" placeholder=".form-group.row>col-sm-10>input">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="syarat" class="col-sm-2">.form-group.row>label</label>
+        <div class="col-sm-10">
+            <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="snk">
+            <label for="snk" class="form-check-label">Saya .form-group.row>.col-sm-10>.form-check>label</label>
+        </div>
+        </div>
+    </div>
+        <button type="button" class="btn btn-primary">Daftar</button>
+        <hr>
+        <p> 
+            <strong>Horizontal Form Label Size</strong> Untuk form yang ditempatkan secara horizontal, terdapat class khusus .col-form-label-sm
+            dan .col-form-label-lg
+        </p>
+
+        <div class="form-group row">
+            <label for="nama" class="col-sm-2 col-form-label form-label-sm" id="nama">class="col-sm-2 col-form-label form-label-sm"</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control form-control-sm" id="input1" placeholder="class= form-control form-control-sm">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="nama" class="col-sm-2 col-form-label" id="nama">class="col-sm-2 col-form-label form-label-sm"</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" id="input1" placeholder="class=form-control">
+    </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="nama" class="col-sm-2 col-form-label form-label-lg" id="nama">class="col-sm-2 col-form-label form-label-sm"</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control form-control-lg" id="input1" placeholder="class= form-control form-control-lg">
+    </div>
+    </div>
+    <hr>
+    <p>
+        <strong>Form Inline</strong> Sekarang
+        bagaimana membuat form yang inline? Yakni seluruh label dan inputan form memanjang ke
+        samping?
+        Untungnya cara ini cukup mudah. Kita hanya perlu menempatkan class .form-inline ke
+        dalam tag &lt;form&gt; seperti contoh berikut:
+    </p>
+
+    <form action="" class="form-inline">
+        <label for="nama">Nama</label>
+        <input type="text" class="form-control mx-2" placeholder='input type="text" class="form-control mx-2"'>
+
+        <label for="nama">Password</label>
+        <input type="password" class="form-control mx-2" placeholder='input type="text" class="form-control mx-2"'>
+    
+        <button type="button" class="btn btn-primary">login</button>
+    </form>
+    
+    <div class="mt-2"></div>
+
+   <p>
+    jika digabung dengan Bootstrap grid system, kita bisa dengan mudah mengatur lebar
+    dan posisi inputan ini
+   </p>
+
+   <form>
+       <div class="row">
+           <div class="col">
+               <input type="text" class="form-control" placeholder=".row>.col>input">
+           </div>
+       
+       <div class="col">
+            <input type="password" class="form-control" placeholder=".row>.col>input">
+       </div>
+       </div>
+    </form>
+
+    <div class="mt-2"></div>
+<p>
+    elain memakai class grid generik seperti .row, terdapat class khusus untuk membuat grid
+form, yakni class .form-row
+</p>
+    <form action="">
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="form.form-row>col>input">
+            </div>
+    
+            <div class="col">
+                <input type="password" class="form-control" placeholder="form.form-row>col>input">
+            </div>
+        </div>
+    </form>
+<hr>
+<p>
+    <strong>Form Help Text</strong> Pada prakteknya teks keterangan ini sering digabung dengan utility class seperti .text-mute
+    agar tidak terlalu mencolok serta ditempatkan ke dalam tag small supaya teks tampil sedikit
+    lebih kecil.
+</p>
+
+<form action="">
+    <label for="">Password</label>
+    <input type="password" class="form-control">
+    <small class="form-text form-text-muted">Password harus berisi minimal 6 digit</small>
+</form>
+<hr>
+<p>
+    <strong>Custome Form</strong> adalah sebutan Bootstrap untuk class yang secara "drastis" mengubah tampilan
+    inputan form, khususnya untuk checkbox, radio, select, file upload dan range.
+</p>
+
+<form action="">
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="nc">
+        <label for="nc" class="form-check-label" >normal checkbox</label>
+    </div>
+
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheckbox">
+        <label for="customCheckbox" class="custom-control-label">custom checkbox</label>
+    </div>
+
+    <br>
+    <div class="form-check">
+        <input type="radio" id="normalRadio1" name="normalRadio"
+        class="form-check-input">
+        <label class="form-check-label" for="normalRadio1">
+          Normal radio 1
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input type="radio" id="normalRadio2" name="normalRadio"
+        class="form-check-input">
+        <label class="form-check-label" for="normalRadio2">
+            Normal radio 2
+        </label>
+      </div>
+
+      <br>
+
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio1" name="customRadio"
+        class="custom-control-input">
+        <label class="custom-control-label" for="customRadio1">Custom radio 1</label>
+      </div>
+
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio2" name="customRadio"
+        class="custom-control-input">
+        <label class="custom-control-label" for="customRadio2">Custom radio 2</label>
+      </div>
+      <br>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input"  id="customCheckbox">
+        <label class="custom-control-label" for="customCheckbox">
+          Custom checkbox
+        </label>
+      </div>
+
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadio1" name="customRadio" 
+        class="custom-control-input">
+        <label class="custom-control-label" for="customRadio1">Custom radio 1</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadio2" name="customRadio"
+        class="custom-control-input">
+        <label class="custom-control-label" for="customRadio2">Custom radio 2</label>
+      </div>
+
+    <br>
+
+    
+    <div class="form-group">
+        <label for="selectNormal">Tahun</label>
+        <select id="selectNormal" class="form-control">
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="selectCustom">Tahun</label>
+        <select id="selectCustom" class="custom-select">
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+        </select>
+      </div>
+      <br><br>
+
+      <div class="form-group">
+          <label for="selectCustom">Small</label>
+          <select id="selectCustom" class="custom-select custom-select-sm">
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="selectCustom">Regular</label>
+          <select id="selectCustom" class="custom-select">
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="selectCustom">Large</label>
+          <select id="selectCustom" class="custom-select custom-select-lg">
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+          </select>
+        </div>
+      
+        <div class="form-group">
+            <label for="fileUploadNormal">Pilih File</label>
+            <input type="file" id="fileUploadNormal" class="form-control-file">
+          </div>
+  
+          <div class="custom-file">
+            <label for="fileUpload" class="custom-file-label">Pilih File</label>
+            <input type="file" id="fileUpload" class="custom-file-input">
+          </div>
+      
+          <div class="form-group">
+            <label for="rangeJarakNormal">Jarak</label>
+            <input type="range" id="rangeJarakNormal" class="form-control-range">
+          </div>
+  
+          <div class="form-group">
+            <label for="rangeJarak">Jarak</label>
+            <input type="range" id="rangeJarak" class="custom-range">
+          </div>
+</form>
+
+
+
+    </div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
