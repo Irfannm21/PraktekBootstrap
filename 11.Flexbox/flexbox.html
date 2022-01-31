@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+</head>
+<style>
+    hr {
+        border: 1px solid black;
+    }
+
+    /* Untuk mengatasi great collapse */
+    
+    .float-clearfix::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="p-2 bg-dark text-white text-center">
+        <div class="p-3 bg-primary" style="width: 80px;">Box 1</div>
+        <div class="p-3 bg-danger" style="width: 80px;">Box 2</div>
+        <div class="p-3 bg-success" style="width: 80px;">Box 3</div>
+    </div>
+    <hr>
+    <p>
+        <strong>Merubah Flexbox menjadi inline</strong> ekarang bagaimana jika saya ingin box ini berjejer dari kiri ke kanan dan bukannya dari atas
+        ke bawah? Terdapat beberapa alternatif solusi. Salah satunya dengan menambahkan class
+        float:left ke dalam setiap box
+    </p>
+    <div class="p-2 bg-dark text-white text-center">
+        <div class="p-3 bg-primary float-left" style="width: 80px;">Box 1</div>
+        <div class="p-3 bg-danger float-left" style="width: 80px;">Box 2</div>
+        <div class="p-3 bg-success float-left" style="width: 80px;">Box 3</div>
+    </div>
+    <hr>
+    <p>
+        <strong> Great Collapse Background menjadi kecil</strong> enyebabnya adalah ketika
+        sebuah element di float-kan, element tersebut akan "keluar" dari normal document flow.
+        Akibatnya tag div yang menampung ketiga box akan mengecil atau collapse karena di
+        dalamnya tidak ada element apapun. Efek ini sering juga disebut sebagai great collapse atau
+        collapsing parent Pertama, kita bisa men-float-kan juga parent element:
+    </p>
+
+    <div class="p-2 bg-dark text-white text-center float-left">
+        <div class="p-3 bg-primary float-left" style="width: 80px;">Box 1</div>
+        <div class="p-3 bg-danger float-left" style="width: 80px;">Box 2</div>
+        <div class="p-3 bg-success float-left" style="width: 80px;">Box 3</div>
+    </div>
+    <hr>
+    <br><br><br><br>
+        Lebar parent element juga ikut
+        mengecil karena efek dari float-left (baris 1). Selain itu jika element ini berada di dalam tag
+        div lain, maka tag itu pun harus di-floatkan, dst. Solusi ini tidak pas untuk kebutuhan kita.
+        Solusi atau trik lain adalah dengan tambahan property overflow:hidden ke dalam parent
+        element
+    </p>
+
+
+    <div class="p-2 bg-dark text-white text-center" style="overflow: hidden;">
+        <div class="p-3 bg-primary float-left" style="width: 80px;">Box 1</div>
+        <div class="p-3 bg-danger float-left" style="width: 80px;">Box 2</div>
+        <div class="p-3 bg-success float-left" style="width: 80px;">Box 3</div>
+    </div>
+
+<p>
+    Namun terdapat efek samping dari penggunaan property overflow:hidden (baris 1), yakni jika
+box ini dipakai untuk membuat menu dropdown, menu tersebut akan tertutupi karena tidak
+bisa tampil keluar dari parent element (tidak bisa overflow). Jadi, solusi ini hanya bisa dipakai
+untuk beberapa kondisi tertentu. Trik selanjutnya adalah dengan menambah sebuah tag <br> dengan property clear:both
+setelah box terakhir
+</p> 
+
+<div class="p-2 bg-dark text-white text-center">
+    <div class="p-3 bg-primary float-left" style="width: 80px;">Box 1</div>
+    <div class="p-3 bg-danger float-left" style="width: 80px;">Box 2</div>
+    <div class="p-3 bg-success float-left" style="width: 80px;">Box 3</div>
+    <br style="clear: both">
+</div>
+<p>
+    Dengan tambahan tag br style="clear: both" di baris 5, ini akan menahan parent element
+agar tidak collapse. Selain itu tidak ada efek samping seperti penggunaan property overflow
+sebelumnya.
+Teknik seperti ini cukup sering dipakai beberapa tahun lalu, namun tidak sedikit web designer
+yang keberatan karena trik ini menambah element lain yang tidak bermakna ke dalam struktur
+HTML, yakni tag br
+</p>
+
+<hr>
+
+<p>
+    <strong>Trik paling umum yang sering digunakan untuk mengatasi masalah collapse</strong> yaitu menggunakan pseudo
+    element selector ::after
+</p>
+<div class="p-2 bg-dark text-white text-center float-clearfix">
+    <div class="p-3 bg-primary float-left" style="width: 80px;">Box 1</div>
+    <div class="p-3 bg-danger float-left" style="width: 80px;">Box 2</div>
+    <div class="p-3 bg-success float-left" style="width: 80px;">Box 3</div>
+    <br style="clear: both">
+</div>
+    <hr>
+    <p>
+        <strong>Ckearfix</strong> Teknik mengatasi parent colapsing dengan pseudo element selector ::after seperti di atas juga
+        sudah tersedia di dalam Bootstrap, yakni dari utility class .clearfix.
+    </p>
+
+    <div class="p-2 bg-dark text-center text-white clearfix">
+        <div class="p-3 bg-primary float-left">Box 1</div>
+        <div class="p-3 bg-danger float-left">Box 2</div>
+        <div class="p-3 bg-success float-left">Box 3</div>
+    </div>
+    <p>
+        ini adalah cara terbaik untuk mengatasi masalah parent colapsing dari penggunaan property
+        float
+    </p>
+
+    <hr>
+
+    <p>
+        <strong>Float Centering</strong>
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

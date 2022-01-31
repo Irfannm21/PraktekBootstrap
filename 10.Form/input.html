@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            <strong>Input Group</strong> adalah komponen Bootstrap yang terdiri dari gabungan tag input type="text">
+            dengan teks biasa atau dengan berbagai komponen Bootstrap lain seperti Button dan
+            Dropdown. Komponen input group ini cukup menarik karena membuat tampilan textbox
+            menjadi lebih modern (
+        </p>
+        <hr>
+        <p>
+            <strong>Prepend dan Append</strong>  Untuk membuat input group, class yang diperlukan adalah .input-group. Class ini berfungsi
+            sebagai "container" yang di dalamnya terdapat tag input type="text" serta komponen lain.
+            Jika komponen lain itu berada di awal (sebelah kiri) inputan, maka akan memakai class .input-
+            group-prepend. Jika ditambahkan di akhir, maka classnya adalah .input-group-append.
+        </p>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">www.</span>
+            </div>
+            <input type="text" class="form-control" placeholder='.input-group>>input'>
+        </div>
+        
+        <br>
+
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder=".input-group>input"> 
+            <div class="input-group-append">
+                <span class="input-group-text">.com</span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">www.</span>
+            </div>
+            <input type="text" class="form-control" placeholder="input-group>input.">
+            <div class="input-group-append">
+                <span class="input-group-text">
+                    .com
+                </span>
+            </div>
+        </div>
+
+        <hr>
+
+        <p>
+            <strong>Input Group Label</strong> Jika ingin menambahkan label keterangan, tempatkan tag <label> sebelum class .input-
+                group
+        </p>
+
+        <label for="labelHarga">Harga Barang</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Rp.</span>
+            </div>
+            <input type="text" class="form-control" placeholder="000000">
+            <div class="input-group-append">
+                <span class="input-group-text">
+                    .00
+                </span>
+            </div>
+        </div>
+        <br>
+        <label for="link">Link Akun</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Https://www.facebook.com/</span>
+            </div>
+            <input id="link" type="text" class="form-control" placeholder="url Profile">
+        </div>
+
+        <hr>
+        <p>
+            <strong>Input Group Size</strong> Ukuran besar komponen input group juga bisa diatur. Sama seperti komponen Bootstrap lain,
+            terdapat 3 ukuran: small, regular (default), dan large.
+        </p>
+
+        <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+                <span class="input-group-text">www.</span>
+            </div>
+            <input type="text" class="form-control" placeholder='.input-group>>input'>
+        </div>
+        
+        <br>
+
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder=".input-group>input"> 
+            <div class="input-group-append">
+                <span class="input-group-text">.com</span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+                <span class="input-group-text">www.</span>
+            </div>
+            <input type="text" class="form-control" placeholder="input-group>input.">
+            <div class="input-group-append">
+                <span class="input-group-text">
+                    .com
+                </span>
+            </div>
+        </div>
+
+        <hr>
+
+        <p>
+            <strong>Multiple Prepend Input</strong> Komponen input group bisa menampung lebih dari 1 teks tambahan maupun lebih dari 1 tag
+            <input type="text">.
+        </p>
+
+    <label for="link">Url facebook</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">https://</span>
+                <span class="input-group-text">www.</span>
+                <span class="input-group-text">facebook.com/</span>
+            </div>
+            <input type="text" class="form-control" id="link">
+        </div>
+
+        <br>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Lokasi</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Provinsi">
+            <input type="text" class="form-control" placeholder="Kota">
+            <input type="text" class="form-control" placeholder="kecamatan">
+        </div>
+
+        <hr>
+        <p>
+            <strong>Input Group checkbox dan radio</strong> Komponen yang bisa ditambah untuk membuat input group tidak hanya teks saja, tapi juga
+            bisa checkbox dan radio. 
+        </p>
+
+        <label for="email">Kirim Laporan</label>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="checkbox" id="email">
+                </div>
+                <span class="input-group-text">Kirim ke Email : </span>
+            </div>
+            <input type="text" class="form-control" id="email" placeholder="email">
+        </div>
+        <br>
+        
+        <label for="jurusan">Jurusan</label>
+       <div class="input-group">
+           <div class="input-group-prepend">
+               <div class="input-group-text">
+                   <input type="checkbox" id="si">
+               </div>
+               <span class="input-group-text">Sisterm Informasi</span>
+           </div>
+           <input type="text" class="form-control" id="si">
+       </div>
+       <div class="mt-1"></div>
+       <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" id="Rekayasa Perangkat Lunak">
+            </div>
+            <span class="input-group-text">Rekayasa Perangkat Lunak</span>
+        </div>
+        <input type="text" class="form-control" id="Rekayasa Perangkat Lunak">
+    </div>
+    <div class="mt-1"></div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" id="Database">
+            </div>
+            <span class="input-group-text">Database</span>
+        </div>
+        <input type="text" class="form-control" id="Database">
+    </div>
+    <hr>
+    <p>
+        <strong>Input Group Button</strong> Komponen selanjutnya yang bisa digabung ke dalam input group adalah button
+    </p>
+
+    <div class="input-group">
+        <div class="input-group-prepend">
+                <button type="button" class="btn btn-secondary">Button</button>
+        </div>
+        <input type="text" class="form-control">
+    </div>
+    
+    <div class="mt-1"></div>
+    
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <div class="input-group-append">
+                <button type="button" class="btn btn-secondary">Button</button>
+        </div>
+    </div>
+    
+    <div class="mt-1"></div>
+
+    <div class="input-group">
+        <div class="input-group-append">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Button</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Pilihan 1</a>
+                    <a href="#" class="dropdown-item">Pilihan 2</a>
+                    <a href="#" class="dropdown-item">Pilihan 3</a>
+                </div>
+        </div>
+        <input type="text" class="form-control">
+    </div>
+    <div class="mt-3"></div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <button type="button" class="btn btn-danger">Split dropdown</button>
+            <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Pilihan 1</a>
+                <a href="#" class="dropdown-item">Pilihan 2</a>
+                <a href="#" class="dropdown-item">Pilihan 3</a>
+            </div>
+        </div>
+        <input type="text" class="form-control">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
