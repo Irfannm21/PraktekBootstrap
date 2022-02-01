@@ -122,26 +122,285 @@ HTML, yakni tag br
     <hr>
 
     <p>
-        <strong>Float Centering</strong>
+        <strong>Float Centering</strong> Masalah lain yang menjadi keterbatasan pembuatan layout dengan float adalah cara
+        membuat rata tengah sebuah block level element (centering element), terutama jika element
+        tersebut harus bersebelahan dengan element lain
+    </p>
+
+    <div class="p-2 bg-dark text-white text-center clearfix">
+        <div class="p-3 bg-primary float-left" style="width: 80px;">Box 1</div>
+        <div class="p-3 bg-danger" style="width: 80px; margin: 0 auto;">Box 2</div>
+        <div class="p-3 bg-success float-right" style="width: 80px;">Box 3</div>
+    </div>
+    <p> 
+        tidak sepenuhnya berhasil. Box 2 memang sudah berada di tengah karena efek dari
+property CSS margin: 0 auto (baris 3). Namun box 3 malah pindah ke baris baru
+    </p>
+    <hr>
+    <div class="p-2 bg-dark text-white text-center clearfix">
+    <div class="p-3 bg-primary float-left" style="width: 80px;">Box 1</div>
+    <div class="p-3 bg-danger" style="width: 80px; display: inline-block;">Box 2</div>
+    <div class="p-3 bg-success float-right" style="width: 80px;">Box 3</div>
+    </div>
+    <hr>
+    <p>
+        <strong>Flex Container</strong> Bootstrap menyediakan utility class flexbox untuk mempermudah kita dalam menerapkan
+        flexbox ke seluruh komponen Bootstrap dan juga grid system. Untuk mulai menggunakan
+        flexbox, tambahkan class .d-flex atau .d-inline-flex ke dalam parent element
+    </p>
+
+    <div class="p-2 mb-2 bg-dark text-white text-center clearfix">
+        <div class="p-3 bg-primary float-left" style="width: 80px;">Box 1</div>
+        <div class="p-3 bg-danger" style="width: 80px; display: inline-block;">Box 2</div>
+        <div class="p-3 bg-success float-right" style="width: 80px;">Box 3</div>
+    </div>
+    <p>
+        d-flex di baris 7. Ini adalah class Bootstrap untuk membuat flexbox
+container. Seluruh tag yang terdapat di dalam flexbox container akan berperilaku khusus
+sesuai dengan aturan CSS flexbox. Setiap element di dalam flexbox container disebut juga
+sebagai flex item.
+Hasilnya, ketiga box yang ada di dalam flexbox container di urutkan secara horizontal dari kiri
+ke kanan.
+    </p>
+    <div class="p-2 mb-2 bg-dark text-white text-center clearfix d-flex">
+        <div class="p-3 bg-primary float-left" style="width: 80px;">Box 1</div>
+        <div class="p-3 bg-danger" style="width: 80px; display: inline-block;">Box 2</div>
+        <div class="p-3 bg-success float-right" style="width: 80px;">Box 3</div>
+    </div>
+    <p>
+        .d-inline-flex juga dipakai untuk
+membuat flexbox container, bedanya parent element juga di set menjadi inline level element.
+Dari segi tampilan, kelompok box ketiga ini tidak melebar seperti kelompok kedua.
+Class .d-flex dan .d-inline-flex bawaan Bootstrap sebenarnya adalah penulisan singkat
+dari property CSS display:flexbox dan display:inline-block. Jika tanpa Bootstrap,
+    </p>
+    <div class="p-2 mb-2 bg-dark text-white text-center clearfix d-inline-flex">
+        <div class="p-3 bg-primary float-left" style="width: 80px;">Box 1</div>
+        <div class="p-3 bg-danger" style="width: 80px; display: inline-block;">Box 2</div>
+        <div class="p-3 bg-success float-right" style="width: 80px;">Box 3</div>
+    </div>
+
+    <hr>
+        <p>
+            kali ini lebar semua box tidak di set. Inilah yang menyebabkan kelompok box pertama (ke 1)
+tampil lebar memenuhi parent element.
+Namun untuk kelompok box kedua dan ketiga yang merupakan flexbox container, lebar dari
+flexbox item otomatis sesuai dengan isi teks di dalamnya. Prilaku ini seolah-oleh box di dalam
+flexbox container berprilaku seperti inline level element
+        </p>
+    <div class="p-2 mb-3 bg-dark text-white">
+        <div class="p-3 bg-primary">Box 1</div>
+        <div class="p-3 bg-danger">Box 2</div>
+        <div class="p-3 bg-success">Box 3</div>
+    </div>
+
+    <div class="p-2 mb-2 bg-dark text-white d-flex">
+        <div class="p-3 bg-primary">.d-flex</div>
+        <div class="p-3 bg-danger">.d-flex</div>
+        <div class="p-3 bg-success">.d-flex</div>
+    </div>
+
+    <div class="p-3 mb-3 bg-dark text-white d-inline-flex">
+        <div class="p-3 bg-primary">.d-inline-flex</div>
+        <div class="p-3 bg-danger">.d-inline-flex</div>
+        <div class="p-3 bg-success">.d-inline-flex</div>
+    </div>
+
+    <p>
+        <strong>Flex Container Breakpoint</strong> untuk flex container, kita juga bisa mengatur agar
+        parent element bisa menjadi flex container hanya ketika masuk ke breakpoint tertentu
+    </p>
+
+    <div class="p-2 bg-dark text-white d-block d-sm-inline-flex d-md-flex">
+            <div class="p-3 bg-primary">.d-sm-inline-flex.d-md-flex</div>
+            <div class="p-3 bg-danger">.d-sm-inline-flex.d-md-flex</div>
+            <div class="p-3 bg-success">.d-sm-inline-flex.d-md-flex</div>
+    </div>
+    <p>
+        .d-block, .d-sm-inline-flex dan .d-md-flex. Artinya, ketika
+masuk ke breakpoint extra-small, container akan menjadi display block biasa (efek dari .d-
+block). Ketika masuk ke breakpoint small, akan berubah menjadi inline-flex (efek dari .d-sm-
+inline-flex). Dan begitu masuk ke breakpoint middle, akan berubah menjadi flex (efek dari
+.d-md-flex).
     </p>
 
 
+    <hr>
 
+    <p>
+        <Strong>Flexx Direction Row</Strong> adalah class Bootstrap untuk mengatur urutan mulai setiap flex item, apakah
+        dari kiri ke kanan atau dari kanan ke kiri. Untuk keperluan ini, Bootstrap menyediakan class
+        .flex-row dan .flex-row-reverse
+    </p>
 
+    <div class="p-3 mb-2 bg-dark text-white d-flex flex-row">
+        <div class="p-3 bg-primary">.d-flex.flex-row</div>
+        <div class="p-3 bg-danger">.d-flex.flex-row</div>
+        <div class="p-3 bg-success">.d-flex.flex-row</div>
+    </div>
 
+    <div class="p-3 mb-2 bg-dark text-white d-flex flex-row-reverse">
+        <div class="p-3 bg-primary">.d-flex.flex-row-reverse</div>
+        <div class="p-3 bg-danger">.d-flex.flex-row-reverse</div>
+        <div class="p-3 bg-success">.d-flex.flex-row-reverse</div>
+    </div>
 
+    <p>
+        <strong> Sekedar mengingatkan, semua class flexbox yang akan kita pelajari, mengharuskan terdapat
+            class .d-flex atau .d-flex-inline terlebih dahulu (sebagai flexbox container)</strong>
+    </p>
 
+    <hr>
+    <p>
+        <strong>Flex Direction Row Breakpoint</strong>
+        Flex direction row juga hadir dalam bentuk breakpoint, dengan format flex-
+kode_breakpoint>-row atau flex-kode_breakpoint>-row-reverse. Sehingga untuk class
+.flex-row dan .flex-row-reverse terdapat 5 variasi class: <br>
+ .flex-row, .flex-sm-row, .flex-md-row, .flex-lg-row, .flex-xl-row.
+<br>  .flex-row-reverse, .flex-sm-row-reverse, .flex-md-row-reverse, .flex-lg-row-
+reverse, .flex-xl-row-reverse.
+    </p>
 
-
-
-
-
-
-
-
+    <div class="p-2 mb-3 bg-dark text-white d-flex flex-sm-row-reverse flex-md-row">
+        <div class="p-3 bg-primary">d-flex flex-sm-row-reverse flex-md-row</div>
+        <div class="p-3 bg-danger">Sama</div>
+        <div class="p-3 bg-success">Sama</div>
+    </div>
     
-</div>
+    <p>
+        artinya ketika masuk ke breakpoint medium, Box diurutkan dari kiri ke kanan (berlaku efek
+.flex-row). Ketika masuk ke breakpoint small, Box akan diurutkan dari kanan ke kiri (berlaku
+efek .flex-row-reverse). Lalu ketika masuk ke breakpoint extra-small, Box kembali diurutkan
+dari kiri ke kanan karena inilah efek default bawaan flexbox (berlaku efek .flex-row)
+    </p>
 
+    <hr>
+
+    <p>
+        <strong>Flex Direction Column</strong> Selain pengaturan secara horizontal, kita juga bisa mengatur urutan flex item secara vertikal,
+        yakni apakah dari atas ke bawah atau bawah ke atas. Untuk keperluan ini Bootstrap
+        menyediakan class .flex-column dan .flex-column-reverse.
+    </p>
+
+    <div class="p-3 mb-3 bg-dark text-white d-flex flex-column">
+        <div class="p-3 bg-primary">flex-column 1</div>
+        <div class="p-3 bg-danger">flex-column 2</div>
+        <div class="p-3 bg-success">flex-column 3</div>
+    </div>
+
+    <div class="p-3 mb-3 bg-dark text-white d-flex flex-column-reverse">
+        <div class="p-3 bg-primary">flex-column 1</div>
+        <div class="p-3 bg-danger">flex-column 2</div>
+        <div class="p-3 bg-success">flex-column 3</div>
+    </div>
+
+    <hr>
+
+    <p>
+        <strong>
+            Flex Column Breakpoint
+        </strong> flex direction column juga hadir dalam bentuk
+        breakpoint, dengan format flex- kode_breakpoint>-column atau flex - kode_breakpoint>-
+        column-reverse. Sehingga untuk class .flex- column dan .flex-column-reverse terdapat 5
+        variasi class
+    </p>
+
+    <div class="p-3 mb-3 bg-dark text-white d-flex flex-sm-column-reverse flex-md-column">
+        <div class="p-3 bg-primary">d-flex flex-sm-column-reverse flex-md-column</div>
+        <div class="p-3 bg-danger">Box 2</div>
+        <div class="p-3 bg-success">Box 3</div>
+    </div>
+
+    <hr>
+    <p>
+        <strong>Flex Justify content</strong> 
+        adalah class flexbox yang mengatur seperti apa "penyebaran" flex item
+secara horizontal. Terdapat 5 variasi class yang tersedia, yakni: <br>
+ .justify-content-start <br>
+ .justify-content-end <br>
+ .justify-content-center <br>
+ .justify-content-between <br>
+ .justify-content-around
+    </p>
+<p>
+    Terlihat
+tidak tampak perubahan apapun, ini karena .justify-content-start adalah class default 
+</p>
+    <div class="p-3 mb-2 bg-dark text-white d-flex justify-content-start">
+            <div class="p-3 bg-primary">justify-content-start</div>
+            <div class="p-3 bg-danger">Sama</div>
+            <div class="p-3 bg-success">Sama</div>
+    </div>
+<p>
+    Perhatikan bahwa urutan flex item tidak berubah
+dimana Box 1 tetap berada paling kiri.
+</p>
+    <div class="p-3 mb-2 bg-dark text-white d-flex justify-content-end">
+        <div class="p-3 bg-primary">justify-content-end</div>
+        <div class="p-3 bg-danger">Sama</div>
+        <div class="p-3 bg-success">Sama</div>
+    </div>
+<p>
+    Efeknya, seluruh flex
+item akan berada di tengah.
+</p>
+    <div class="p-3 mb-2 bg-dark text-white d-flex justify-content-center">
+        <div class="p-3 bg-primary">justify-content-center</div>
+        <div class="p-3 bg-danger">Sama</div>
+        <div class="p-3 bg-success">Sama</div>
+    </div>
+<p>
+    Hasilnya, flex item
+akan di sebar ke setiap sisi flex container.
+</p>
+    <div class="p-3 mb-2 bg-dark text-white d-flex justify-content-between">
+            <div class="p-3 bg-primary">justify-content-between</div>
+            <div class="p-3 bg-danger">Sama</div>
+            <div class="p-3 bg-success">Sama</div>
+    </div>
+<p>
+    di sini
+ruang kosong yang ada di dalam flex container akan di sebar secara merata. Spasi atau margin
+di sisi kanan dan kiri dari Box 1 akan sama besar dengan spasi di kiri dan kanan Box 2,
+</p>
+    <div class="p-3 mb-2 bg-dark text-white d-flex justify-content-around">
+        <div class="p-3 bg-primary">justify-content-around</div>
+        <div class="p-3 bg-danger">Sama</div>
+        <div class="p-3 bg-success">Sama</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.js"></script>
