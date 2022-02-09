@@ -368,37 +368,421 @@ di sisi kanan dan kiri dari Box 1 akan sama besar dengan spasi di kiri dan kanan
         <div class="p-3 bg-danger">Sama</div>
         <div class="p-3 bg-success">Sama</div>
     </div>
+<hr>
+<p>
+    <strong>Flex Justify Content</strong> Karena terdapat 5 class untuk mengatur flex justify content, maka total akan terdapat 25
+    class untuk semua variasi breakpoint. Format penulisannya adalah justify-content-
+    <kode_breakpoint>-<jenis_justify>. Berikut daftar classnya:
+     .justify-content-start, .justify-content-sm-start, .justify-content-md-start,
+    .justify-content-lg-start, .justify-content-xl-start. <br>
+     .justify-content-end, .justify-content-sm-end, .justify-content-md-end,
+    .justify-content-lg-end, .justify-content-xl-end. <br>
+     .justify-content-center, .justify-content-sm-center, .justify-content-mdcenter, .justify-content-lg-center, .justify-content-xl-center. <br>
+     .justify-content-between, .justify-content-sm-between, .justify-content-mdbetween, .justify-content-lg-between, .justify-content-xl-between. <br>
+     .justify-content-around, .justify-content-sm-around, .justify-content-mdaround, .justify-content-lg-around, .justify-content-xl-around    
+</p>
 
+<div class="p-3 mb-3 text-white bg-dark d-flex justify-content-sm-around justify-content-md-center justify-content-lg-end">
+    <div class="p-3 bg-primary">Box 1</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+</div>
+<hr>
+<p>
+    <strong>Flex Align Item</strong> Flex align items adalah class flexbox Bootstrap untuk mengatur posisi element secara vertikal
+    atau "penyebaran" flex item secara vertikal. Terdapat 5 variasi class yang tersedia, yakni:
+     .align-items-start <br>
+     .align-items-end <br>
+     .align-items-center <br>
+     .align-items-baseline <br>
+     .align-items-stretch
+    
+</p>
+<p>
+    .align-items-start. Hasilnya,
+seluruh flex item berada di sisi atas. 
+</p>
+<div style="height: 100px;" class="p-2 mb-3 bg-dark text-white d-flex align-items-start">
+    <div class="p-3 bg-primary">Start</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+</div>
+<p>
+    .align-itemsend. Hasilnya, seluruh flex item berada di sisi bawah
+</p>
+<div style="height: 100px;" class="p-2 mb-3 bg-dark text-white d-flex align-items-end">
+    <div class="p-3 bg-primary">End</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+</div>
+<p>
+    .align-items-center. Dan seperti yang bisa ditebak,
+seluruh flex item berada di sisi tengah
+</p>
+<div style="height: 100px;" class="p-2 mb-3 bg-dark text-white d-flex align-items-center">
+    <div class="p-3 bg-primary">center</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+</div>
+<p>
+    .align-items-baseline. Dari hasil di atas terlihat
+    tidak berbeda dengan hasil
+</p>
+<div style="height: 100px;" class="p-2 mb-3 bg-dark text-white d-flex align-items-baseline">
+    <div class="p-3 bg-primary">Baseline</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+</div>
+<p>.align-items-start, tapi sebenarnya setiap flex item akan diatur
+    berdasarkan posisi teks (baseline)</p>
+<div style="height: 100px;" class="p-2 mb-3 bg-dark text-white d-flex align-items-stretch">
+    <div class="p-3 bg-primary">Stretch</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+</div>
+<hr>
+<p>
+    <strong>Flex Align Breakpoint</strong> Karena ada 5 variasi align items, maka total terdapat 25 variasi nama class untuk semua
+    breakpoint (5 x 5). Contohnya seperti class <br> .align-items-sm-start, <br> .align-items-md-center, <br>
+    .align-items-lg-end.
+</p>
 
+<div style="height: 150px;" class="p-2 mb-3 bg-dark text-white d-flex align-items-sm-baseline align-items-md-baseline">
+    <div class="p-3 bg-primary">P-3</div>
+    <div class="p-2 bg-danger">P-2</div>
+    <div class="p-4 bg-success">P-4</div>
+</div>
+<hr>
+<p>
+    <strong>Flex Align Self</strong> Flex align self sangat mirip seperti align items yang baru saja kita bahas. Bedanya, class ini
+    dipakai untuk mengatur setiap flex item secara individu, bukan keseluruhan flex item seperti
+    sebelumnya Terdapat 5 jenis variasi class untuk flex align self:
+     .align-self-start <br>
+     .align-self-end <br>
+     .align-self-center <br>
+     .align-self-baseline <br>
+     .align-self-stretch
+</p>
 
+<div style="height: 200px;" class="p-2 mb-3 bg-dark text-white d-flex align-items-sm-baseline align-items-md-baseline">
+    <div class="p-3 bg-primary align-self-start">Start</div>
+    <div class="p-3 bg-danger align-self-end">End</div>
+    <div class="p-3 bg-success align-self-center">Center</div>
+    <div class="p-3 bg-warning align-self-baseline">Baseline</div>
+    <div class="p-3 bg-secondary align-self-stretch">Stretch</div>
+</div>
 
+<hr>
+<p> 
+    <strong>Flex Align Self Breakpoint</strong> Juga sama seperti class align items, class align self juga punya variasi breakpoint dengan
+    format .align-self-&lt;kode_breakpoint>-&lt;jenis_align>. Contoh penulisan class seperti: <br>
+    .align-self-sm-start, <br> .align-self-md-center, <br> dan .align-self-lg-end.
+ </p>
 
+ <div style="height: 150px;" class="p-2 mb-3 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary align-self-sm-start align-self-md-end">Sm-start md-end</div>
+    <div class="p-3 bg-danger align-self-sm-center align-self-md-center">Md-center md-center</div>
+    <div class="p-3 bg-success align-self-sm-end align-self-md-start">sm-end md-start</div>
+</div>
+<p>
+    <strong>Flexx Fill</strong> Flex fill adalah class flexbox Bootstrap untuk membuat flex item melebar secara horizontal
+    memenuhi ruang yang masih tersedia.
+</p>
 
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary flex-fill">flex-fill</div>
+    <div class="p-3 bg-danger">flex-fill</div>
+    <div class="p-3 bg-success">Box 3</div>
+</div>
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary flex-fill">flex-fill</div>
+    <div class="p-3 bg-danger flex-fill">flex-fill</div>
+    <div class="p-3 bg-success">box 3</div>
+</div>
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary flex-fill">flex-fill</div>
+    <div class="p-3 bg-danger flex-fill">flex-fill</div>
+    <div class="p-3 bg-success flex-fill">flex-fill</div>
+</div>
 
+<hr>
+<p>
+    <strong>Flex Fill Breakpoint</strong> class flex fill menggunakan format .flex-<kode_breakpoint>-fill.
+        Dengan demikian terdapat 5 variasi class flex fill: .flex-fill, <br> .flex-sm-fill, <br> .flex-md-fill,
+        .flex-lg-fill, <br> dan .flex-xl-fill
+</p>
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary flex-fill">flex-fill</div>
+    <div class="p-3 bg-danger flex-sm-fill">flex-fill</div>
+    <div class="p-3 bg-success flex-md-fill">flex-fill</div>
+</div>
+<hr>
+<p>
+    <strong>Flex Grow</strong> Dalam konsep CSS, flex grow adalah cara untuk mengatur skala "pembesaran" dari setiap flex
+    item. Namun di dalam Bootstrap, class flex grow ini hanya bisa diatur dengan 2 nilai saja: 0
+    untuk tidak ada pembesaran (class .flex-grow-0), dan 1 untuk pembesaran normal (class
+    .flex-grow-1) . Akibatnya, flex grow ini nyaris tidak berbeda dengan flex fill yang baru saja
+    kita bahas.
+</p>
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary flex-grow-1">flex-grow-1</div>
+    <div class="p-3 bg-danger flex-grow-0">flex-grow-0</div>
+    <div class="p-3 bg-success flex-grow-0">flex-grow-0</div>
+</div>
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary flex-grow-1">flex-grow-1</div>
+    <div class="p-3 bg-danger flex-grow-1">flex-grow-1</div>
+    <div class="p-3 bg-success flex-grow-0">flex-grow-0</div>
+</div>
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary flex-grow-1">flex-grow-1</div>
+    <div class="p-3 bg-danger flex-grow-1">flex-grow-1</div>
+    <div class="p-3 bg-success flex-grow-1">flex-grow-1</div>
+</div>
+<hr>
+<p>
+    <strong>Flex Grow Breakpoint</strong> Untuk variasi breakpoint, class flex grow menggunakan format .flex-&lt;kode_breakpoint>-
+        grow-&lt;0_atau_1>. 
+</p>
 
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary flex-grow-1 flex-grow-1 flex-md-grow-0">flex-grow-</div>
+    <div class="p-3 bg-danger flex-md-grow-1">flex-grow-</div>
+    <div class="p-3 bg-success">flex-grow-</div>
+</div>
+<hr>
+<p>
+    <strong>Flex Shrink</strong> Class flex shrink dipakai untuk mengatur apa yang terjadi ketika flex item terpaksa
+    "menyusut" karena tidak ada ruang lagi.
+    Secara default, teks yang ada di dalam flex item akan pindah ke baris baru. Ini adalah efek dari
+    class .flex-shrink-1. Jika kita tidak ingin agar teks pindah ke baris baru, bisa gunakan class
+    .flex-shrink-0
+</p>
 
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary">>Box 1 yang cukup panjang</div>
+    <div class="p-3 bg-danger">>Box 1 yang cukup panjang</div>
+    <div class="p-3 bg-success">>Box 1 yang cukup panjang</div>
+</div>
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary flex-shrink-1">flex-shrink-1 new line</div>
+    <div class="p-3 bg-danger flex-shrink-0">>flex-shrink-0 tanpa new line</div>
+    <div class="p-3 bg-success flex-shrink-1">>Box 1 yang cukup panjang</div>
+</div>
+<hr>
+<p>
+    <strong>Flex Shrink Breakpoint</strong> Flex shrink juga memiliki variasi breakpoint dengan format .flex-<kode_breakpoint>-
+        shrink-&lt;0_atau_1>
+</p>
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary flex-sm-shrink-0 flex-md-shrink-1">flex-shrink-1 new line</div>
+    <div class="p-3 bg-danger">>Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+</div>
+<hr>
+<p>
+    <strong>Flex Order </strong> Fungsi dari class flex order sama seperti class order di grid system, yakni mengatur
+    penempatan posisi setiap flex item secara manual. Jadi meskipun Box 1 ditulis pertama kali,
+    tapi kita bisa mengaturnya agar tampil setelah Box 3.
+    Bootstrap menyediakan 13 nomor class, mulai dari .order-0, .order-1, .order-2, dst hingga
+    .order-12.
+</p>
 
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary order-1">order-1</div>
+    <div class="p-3 bg-danger order-0">order-0</div>
+    <div class="p-3 bg-success order-2">order-2</div>
+</div>
 
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary order-1">order-1</div>
+    <div class="p-3 bg-danger order-12">order-12</div>
+    <div class="p-3 bg-success order-5">order-5</div>
+</div>
 
+<hr>
+<p>
+    <strong>Flex ORder Breakpoint</strong> Class order ini juga tersedia dalam variasi breakpoint, dimana format penulisannya adalah:
+    .order-&lt;kode_breakpoint>-&lt;0,2,3,_dst>. Karena ada 13 nomor dan 5 variasi breakpoint, total
+    terdapat 13 * 5 = 65 
+ </p>
 
+ <div class="p-3 mb-2 bg-dark text-white d-flex">
+     <div class="p-3 bg-primary order-sm-2 order-md-0">order-sm-2 order-md-0</div>
+     <div class="p-3 bg-success order-sm-1 order-md-2">order-sm-1 order-md-1</div>
+     <div class="p-3 bg-danger order-sm-0 order-md-2">order-sm-0 order-md-2</div>
+ </div>
+ <hr>
+ <p>
+     <strong>Flex Margin</strong> Sebagaimana yang telah kita pelajari, Bootstrap memiliki utilities class untuk padding dan
+     margin. Diantaranya class .mr-auto yang tidak lain dari berisi kode CSS margin-right:auto,
+     class .ml-auto yang berarti margin-left:auto, serta .mx-auto yang merupakan gabungan dari
+     margin-right:auto dan margin-left:auto.
+     Ketiga class ini (.mr-auto, .ml-auto dan .mx-auto) membawa efek menarik ke dalam flex item,
+     seperti contoh berikut:
+ </p>
+ <div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary">Box 1</div>
+    <div class="p-3 bg-danger mr-auto">mr-auto</div>
+    <div class="p-3 bg-success">box-3</div>
+</div>
 
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary">Box 1</div>
+    <div class="p-3 bg-danger ml-auto">ml-auto</div>
+    <div class="p-3 bg-success">Box 3</div>
+</div>
 
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary">Box 1</div>
+    <div class="p-3 bg-danger mx-auto">ml-auto</div>
+    <div class="p-3 bg-success">Box 3</div>
+</div>
 
+<div class="p-3 mb-2 bg-dark text-white d-flex">
+    <div class="p-3 bg-primary ml-auto">mr-auto</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success mr-auto">ml-auto</div>
+</div>
 
+<hr>
+<div style="height: 250px;" class="p-3 mb-2 bg-dark text-white d-flex flex-column align-items-start">
+    <div class="p-3 bg-primary">Box 1</div>
+    <div class="p-3 bg-danger mt-auto">Box 2</div>
+    <iv class="p-3 bg-success">Box 3</div>
+</div>
 
+<hr>
 
+<div style="height: 250px;" class="p-3 mb-2 bg-dark text-white d-flex flex-column align-items-start">
+    <div class="p-3 bg-primary mt-auto">mt-auto</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success mb-auto">mb-auto</div>
+</div>
 
+<div style="height: 250px;" class="p-3 mb-2 bg-dark text-white d-flex flex-column align-items-start">
+    <div class="p-3 bg-primary">Box 1</div>
+    <div class="p-3 bg-danger my-auto">my-auto</div>
+    <div class="p-3 bg-success">Box 3</div>
+</div>
 
+<hr>
+<p>
+    <strong>Flex Wrap</strong> Flex wrap adalah class flexbox Bootstrap yang mengatur proses "wraping" atau pemindahan
+    sebagian flex item ke baris baru jika sudah tidak muat lagi. Terdapat 3 variasi class yang tersedia, yakni <br> .flex-nowrap, <br> .flex-wrap <br> .flex-wrap-reverse.
+</p>
 
+<div class="p-3 mb-2 bg-dark text-white d-flex flex-nowrap">
+    <div class="p-3 bg-primary">flex-nowrap</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+    <div class="p-3 bg-warning">Box 4</div>
+    <div class="p-3 bg-secondary">Box 5</div>
+    <div class="p-3 bg-info">Box 6</div>
+</div>
 
+<div class="p-3 mb-2 bg-dark text-white d-flex flex-wrap">
+    <div class="p-3 bg-primary">flex-wrap</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+    <div class="p-3 bg-warning">Box 4</div>
+    <div class="p-3 bg-secondary">Box 5</div>
+    <div class="p-3 bg-info">Box 6</div>
+</div>
 
+<div class="p-3 mb-2 bg-dark text-white d-flex flex-wrap-reverse">
+    <div class="p-3 bg-primary">flex-wrap-reverse</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+    <div class="p-3 bg-warning">Box 4</div>
+    <div class="p-3 bg-secondary">Box 5</div>
+    <div class="p-3 bg-info">Box 6</div>
+</div>
+<hr>
+<p>
+    <strong>Flex Wrap Breakpoint</strong> Variasi breakpoint dari flex wrap menggunakan format berikut: .flex-&lt;kode_breakpoint>-
+        &lt;jenis_wrap>. 
+</p>
+<div class="p-3 mb-2 bg-dark text-white d-flex flex=sm-wrap flex-md-wrap-reverse">
+    <div class="p-3 bg-primary">d-flex flex=sm-wrap flex-md-wrap-reverse no 1</div>
+    <div class="p-3 bg-danger">d-flex flex=sm-wrap flex-md-wrap-reverse no 2 </div>
+    <div class="p-3 bg-success">d-flex flex=sm-wrap flex-md-wrap-reverse no 3</div>
+    <div class="p-3 bg-warning">d-flex flex=sm-wrap flex-md-wrap-reverse no 4</div>
+    <div class="p-3 bg-secondary">d-flex flex=sm-wrap flex-md-wrap-reverse no 5</div>
+    <div class="p-3 bg-info">d-flex flex=sm-wrap flex-md-wrap-reverse no 6</div>
+</div>
+<hr>
+<p>
+    <strong>Flex Align Content</strong> Flex align content sangat mirip seperti flex justify content, bedanya kali ini kita mengatur
+    sebaran flex item secara vertikal, bukan horizontal seperti flex justify content.
+    Flex align content hadir dalam 5 variasi class, yakni: <br>
+     .align-content-start <br>
+     .align-content-end <br>
+     .align-content-center <br>
+     .align-content-between <br>
+     .align-content-around <br>
+    
+</p>
 
+<div style="height: 180px;" class="p-3 mb-2 bg-dark text-white d-flex flex-wrap align-content-start">
+    <div class="p-3 bg-primary">align-content-start</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+    <div class="p-3 bg-warning">Box 4</div>
+    <div class="p-3 bg-secondary">Box 5</div>
+    <div class="p-3 bg-info">Box 6</div>
+</div>
 
+<div style="height: 180px;" class="p-3 mb-2 bg-dark text-white d-flex flex-wrap align-content-end">
+    <div class="p-3 bg-primary">align-content-end</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+    <div class="p-3 bg-warning">Box 4</div>
+    <div class="p-3 bg-secondary">Box 5</div>
+    <div class="p-3 bg-info">Box 6</div>
+</div>
 
+<div style="height: 180px;" class="p-3 mb-2 bg-dark text-white d-flex flex-wrap align-content-center">
+    <div class="p-3 bg-primary">align-content-center</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+    <div class="p-3 bg-warning">Box 4</div>
+    <div class="p-3 bg-secondary">Box 5</div>
+    <div class="p-3 bg-info">Box 6</div>
+</div>
 
+<div style="height: 180px;" class="p-3 mb-2 bg-dark text-white d-flex flex-wrap align-content-between">
+    <div class="p-3 bg-primary">align-content-between</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+    <div class="p-3 bg-warning">Box 4</div>
+    <div class="p-3 bg-secondary">Box 5</div>
+    <div class="p-3 bg-info">Box 6</div>
+</div>
 
+<div style="height: 180px;" class="p-3 mb-2 bg-dark text-white d-flex flex-wrap align-content-around">
+    <div class="p-3 bg-primary">align-content-around</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+    <div class="p-3 bg-warning">Box 4</div>
+    <div class="p-3 bg-secondary">Box 5</div>
+    <div class="p-3 bg-info">Box 6</div>
+</div>
+<hr>
+<p>
+    <strong>Flex Content Align</strong> Jenis variasi breakpoint dari flex item menggunakan format berikut: .align-content-
+    &lt;kode_breakpoint>-&lt;jenis_align>. Karena terdapat 5 variasi class, sehingga total ada 25
+    class, yakni 5 untuk setiap breakpoint
+</p>
 
-
+<div style="height: 180px;" class="p-3 mb-2 bg-dark text-white d-flex flex-wrap align-content-start align-content-sm-end align-content-md-center">
+    <div class="p-3 bg-primary">align content start sm end md center</div>
+    <div class="p-3 bg-danger">Box 2</div>
+    <div class="p-3 bg-success">Box 3</div>
+    <div class="p-3 bg-warning">Box 4</div>
+    <div class="p-3 bg-secondary">Box 5</div>
+    <div class="p-3 bg-info">Box 6</div>
+</div>
 
 </div>
 <script src="js/jquery-3.3.1.js"></script>
