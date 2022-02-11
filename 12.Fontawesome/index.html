@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<style>
+    hr {
+        border: 1px solid black;
+    }
+
+    #fw {
+        background-color: #d743ca;
+    }
+</style>
+<body>
+    <div class="container">
+        <p>
+            <strong>Font Awesome Solid</strong> Solid adalah kelompok icon dengan tampilan mayoritas hitam
+        </p> 
+        <div class="m-3">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-book"></i>
+            <i class="fas fa-users"></i>
+            <i class="fas fa-laptop-code"></i>
+            <i class="fas fa-check-square"></i>
+        </div>
+        <hr>
+        <p>
+            <strong>Font Awesome Regular</strong> Regular adalah kelompok icon dengan tampilan yang lebih dominan putih
+        </p>
+        <div class="m-3">
+            <i class="far fa-hand-point-right"></i>
+            <i class="far fa-hospital"></i>
+            <i class="far fa-registered"></i>
+            <i class="far fa-calender-plus"></i>
+            <i class="far fa-check-square"></i>
+        </div>
+        <hr>
+        <p>
+            <strong>Font Awesome Brands</strong> Brands adalah kelompok icon merk atau logo seperti facebook, twitter dan instagram.
+        </p>
+
+        <div class="m-3">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-google-play"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-windows"></i>
+        </div>
+        <hr>
+        <p>
+            <strong>Manipulasi Icon Font Awesome</strong> Selain itu karena icon di font
+            awesome berbentuk font, maka bisa diwarnai menggunakan property color CSS seperti teks pada umumnya
+        </p>
+        <strong>Memperbesar Ukuran Icon</strong> Dapat terlihat bahwa meskipun ukuran font di perbesar, gambar icon tetap tajam. Inilah salah
+        satu keunggulan icon berbasis vector seperti font awesome. 
+        <div class="m-3">
+            <i class="fas fa-paper-plane" style="font-size: 16px;"></i>
+            <i class="fas fa-paper-plane" style="font-size: 20px;"></i>
+            <i class="fas fa-paper-plane" style="font-size: 40px;"></i>
+            <i class="fas fa-paper-plane" style="font-size: 60px;"></i>
+            <i class="fas fa-paper-plane" style="font-size: 90px;"></i>
+        </div>
+        <p>
+            Selain menggunakan kode CSS langsung, font awesome juga menyediakan 13 class bawaan
+untuk mengatur ukuran icon, yakni class <strong> .fa-xs, .fa-sm, .fa-lg, serta class .fa-1x, .fa-2x, 
+.fa-3x, dst hingga .fa-10x: </strong>
+        </p>
+        <div class="m-3">
+            <i class="fas fa-laptop-code fa-xs"></i>
+            <i class="fas fa-laptop-code fa-sm"></i>
+            <i class="fas fa-laptop-code fa-lg"></i>
+            <i class="fas fa-laptop-code fa-2x"></i>
+            <i class="fas fa-laptop-code fa-3x"></i>
+            <i class="fas fa-laptop-code fa-5x"></i>
+            <i class="fas fa-laptop-code fa-7x"></i>
+            <i class="fas fa-laptop-code fa-10x"></i>
+        </div>
+        <p>
+            Class bawaan font aweseme ini menggunakan satuan em sebagai dasar, yakni sebagai berikut: <br>
+            .fa-xs { font-size: .75em; } <br>
+            .fa-sm { font-size: .875em; }  <br>
+            .fa-lg { font-size: 1.33333em; } <br>
+            .fa-1x { font-size: 1em; } <br>
+            .fa-2x { font-size: 2em; } <br> 
+            .fa-3x { font-size: 3em; } <br>
+            .fa-4x { font-size: 4em; } <br>
+            .fa-5x { font-size: 5em; } <br>
+            .fa-6x { font-size: 6em; } <br>
+            .fa-7x { font-size: 7em; } <br>
+            .fa-8x { font-size: 8em; } <br>
+            .fa-9x { font-size: 9em; } <br>
+            .fa-10x { font-size: 10em; } <br>
+        </p>
+        <hr>
+        <p>
+        <strong>Mengubah Warna Icon</strong> Kembali karena font awesome pada dasarnya adalah sebuah font, warna icon ini bisa kita ubah
+        menggunakan property color CSS,
+        </p>
+        <div class="m-3 fa-4x">
+            <i class="fas fa-home" style="color: red;"></i>
+            <i class="fas fa-book" style="color: green;"></i>
+            <i class="fas fa-users" style="color: #d743ca;"></i>
+            <i class="fas fa-laptop-code" style="color: rgb(24, 168, 216);"></i>
+            <i class="fas fa-check-square" style="color: rgba(86, 199, 95, 0.8);"></i>
+        </div>
+        <hr>
+        <p>
+            Selain dari CSS langsung, kita juga bisa menggunakan utilities class Bootstrap:
+        </p>
+        <div class="m-3 fa-3x">
+            <i class="far fa-hand-point-right text-primary"></i>
+            <i class="far fa-hospital text-secondary"></i>
+            <i class="far fa-registered text-danger"></i>
+            <i class="far fa-calender-plus text-success"></i>
+            <i class="far fa-check-square text-warning"></i>
+        </div>
+
+        <div class="m-3 text-info fa-3x">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-google-play"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-windows"></i>
+        </div>
+        <hr>
+        <p>
+            <strong>Fixed Width Icon</strong> Font awesome terdiri dari berbagai icon dengan lebar dan tinggi yang berbeda-beda.
+            Akibatnya jika kita menampilkan icon secara vertical, perbedaan ini membuat tampilan icon
+            menjadi tidak sejajar. oleh karena itu font awesome menyediakan class .fa-fw untuk mengatur agar lebar setiap
+            icon menjadi sama besar (fixed width)
+        </p>
+
+        <div class="m-3 float-left" style="font-size: 25px;">
+            <div class=""><i  id="fw" class="fas fa-home"></i>fas fa-home</div>
+            <div class=""><i  id="fw" class="fas fa-book"></i>fas fa-book</div>
+            <div class=""><i  id="fw" class="fas fa-users"></i>fas fa-users</div>
+            <div class=""><i  id="fw" class="fas fa-calendar-plus"></i> Calendar </div>
+            <div class=""><i  id="fw" class="fas fa-check-square"></i>fas fa-check-square</div>
+        </div>
+        <div class="m-3 ml-5 float-left" style="font-size: 25px;">
+            <div class=""><i  id="fw" class="fas fa-home fa-fw"></i>fas fa-home</div>
+            <div class=""><i  id="fw" class="fas fa-book fa-fw"></i>fas fa-book</div>
+            <div class=""><i  id="fw" class="fas fa-users fa-fw"></i>fas fa-users</div>
+            <div class=""><i  id="fw" class="fas fa-calendar-plus fa-fw"></i> Calendar </div>
+            <div class=""><i  id="fw" class="fas fa-check-square fa-fw"></i>fas fa-check-square</div>
+        </div>
+        <br><br><br><br><br><br><br><br><br>    
+        <hr>
+        <p>
+            <strong>Icon List</strong> Agar lebih mudah, font awesome menyediakan class .fa-ul dan .fa-li untuk keperluan ini
+        </p>
+        <div class="m-3">
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>.m-3>fa-ul>fas fa-check-square</li>
+                <li><span class="fa-li"><i class="fas fa-plus-square"></i></span>.m-3>fa-ul>fas fa-plus-square</li>
+                <li><span class="fa-li"><i class="fas fa-minus-square"></i></span>.m-3>fa-ul>fas fa-minus-square</li>
+                <li><span class="fa-li"><i class="far fa-square"></i></span>.m-3>fa-ul>fas fa-square</li>
+            </ul>
+        </div>
+        <hr>
+        <p>
+            <strong>Rotating Icon</strong> Font awesome juga mengediakan class khusus untuk memutar icon (rotating icon). Caranya,
+            tambahkan salah satu dari class berikut: <br>
+             .fa-rotate-90 <br>
+             .fa-rotate-180 <br>
+             .fa-rotate-270 <br>
+             .fa-flip-horizontal <br>
+             .fa-flip-vertical <br>
+        </p>
+
+        <div class="m-3 fa-3x">
+            <i class="fas fa-truck"></i>
+            <i class="fas fa-truck fa-rotate-90"></i>
+            <i class="fas fa-truck fa-rotate-180"></i>
+            <i class="fas fa-truck fa-rotate-270"></i>
+            <i class="fas fa-truck fa-flip-horizontal"></i>
+            <i class="fas fa-truck fa-flip-vertical"></i>
+        </div>
+        <hr>
+        <p>
+            <strong>Spinning Icon</strong> ika memutar icon masih kurang menarik, bagaimana jika kita memutarnya dengan animasi
+            (spinning)? Font awesome menyediakan class .fa-pulse dan .fa-spin untuk keperluan ini.
+            Class .fa-pulse akan memutar icon per-posisi setiap 45 derajat (efek patah-patah), sedangkan
+            class .fa-spin akan memutar icon secara halus
+        </p>
+        <div class="m-3 fa-3x">
+            <i class="fas fa-truck fa-pulse"></i>
+            <i class="fas fa-spinner fa-pulse"></i>
+            <i class="fas fa-circle-notch fa-pulse"></i>
+            <i class="fas fa-sync fa-pulse"></i>
+            <i class="fas fa-cog fa-pulse"></i>
+        </div>
+        <div class="m-3 fa-3x">
+            <i class="fas fa-truck fa-spin"></i>
+            <i class="fas fa-spinner fa-spin"></i>
+            <i class="fas fa-circle-notch fa-spin"></i>
+            <i class="fas fa-sync fa-spin"></i>
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <hr>
+        <p>
+            <strong>Stacked Icon</strong> Stacked icon adalah sebutan dari menumpuk 2 buah icon untuk menghasilkan tampilan icon
+            baru. Font awesome menyediakan 4 class untuk membuat efek ini, yaitu class .fa-stack, .fa-stack-1x, .fa-stack-2x dan .fa-inverse
+        </p>
+        <div class="m-3">
+            <span class="fa-stack fa-2x">
+                <i class="fas fa-square fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+            <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+            </span>
+            <span class="fa-stack fa-4x">
+                <i class="fas fa-square fa-stack-2x"></i>
+                <i class="fas fa-terminal fa-stack-1x fa-inverse"></i>
+            </span>
+            <span class="fa-stack fa-2x">
+                <i class="fas fa-camera fa-stack-1x"></i>
+                <i class="fas fa-ban fa-stack-2x" style="color: tomato;"></i>
+            </span>
+        </div>
+    </div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
