@@ -1,0 +1,31 @@
+/* NAVBAR */
+#main-navbar a {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+}
+
+#main-navbar a:hover, #main-navbar .active {
+    border-bottom-color: #f8f9fa;
+    transition: border-color 500ms;
+}
+
+#showcase {
+    background: url('../img/pd/1.jpg');
+   height: 600px;
+    background-size: cover;
+    background-attachment: fixed;  
+    background-repeat: no-repeat;
+}
+
+#product {
+    padding-top: 80px;
+}
+
+#product > img {
+    width: 350px;
+    height: 250px;
+}
+
+#market {
+    padding-top: 80px;
+}
